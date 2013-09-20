@@ -118,7 +118,7 @@ Google PageSpeed Score : [100](//developers.google.com/speed/pagespeed/insights#
     cloudcmd
 ```
 
-Налаштування // Конфігурування
+Налаштування
 ---------------
 Всі головні налаштування можна встановити в config.json.
 ```js
