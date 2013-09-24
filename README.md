@@ -62,7 +62,7 @@ Google PageSpeed Score : [100](//developers.google.com/speed/pagespeed/insights#
 - **Ctrl + r**          - оновити вміст папки
 - **Ctrl + d**          - очистити локальний кеш (в тому числі, вміст папки // wich contains dir contents)
 - **Alt  + q**          - вимкнути прив'язку клавіш
-- **Alt  + s**          - повернути (відновити) усі прив'язки клавіш // get all key bindings back
+- **Alt  + s**          - відновити усі прив'язки клавіші
 - **Ctrl + a**          - виділити (обрати) усі файли на панелі
 - **up, down, enter**   - пересування файловою систему (навігація по файловій системі)
 - **Tab**               - змінити поточну панель // move thru panels
@@ -75,12 +75,12 @@ Google PageSpeed Score : [100](//developers.google.com/speed/pagespeed/insights#
 - **Shift + F10**       - контекстне меню
 - **~**                 - консоль
 
-Гарячі клавіші переглядача (переглядання)
+Гарячі клавіші переглядача
 ---------------
 - **F3**                - відкрити
 - **Esc**               - закрити
 
-Гарячі клавіші редактора (редагування)
+Гарячі клавіші редактора
 ---------------
 - **F4**                - відкрити
 - **Ctrl + s**          - зберегти
@@ -292,6 +292,3 @@ MIT [license](LICENSE "ліцензія").
 ---------------
 [Elena Zalitok](http://vk.com/politilena "Олені Заліток") за
 [logo](img/logo/cloudcmd.png "логотип") та [favicon](img/favicon/favicon.png "фавіконку").
-
-
-Ukrainian version of cloudcmd's page :)
