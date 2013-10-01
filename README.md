@@ -152,7 +152,7 @@ Standard practices say no non-root process gets to talk to
 the Internet on a port less than 1024.В любому випадку, Я раджу Вам
 запускати Cloud Commander не під рутом. Як це зробити?!
 Існує декілька простих і швидких шляхів. Один з них - просування портів через iptables. // One of them is port forwarding by iptables.
-Просто запустіть[shell/addtables.sh](shell/addtables.sh) для стандартних опцій.
+Просто запустіть [shell/addtables.sh](http://github.com/coderaiser/cloudcmd/blob/master/shell/addtables.sh) для стандартних опцій.
 
 ```sh
 @:/tmp/cloudcmd (dev) $ sudo iptables -t nat -L # look rules before
@@ -198,7 +198,7 @@ or **shell/secret.sh** *(on nix)*.
 
     cloudcmd
 
-Після цього, Cloud Commander читає інформацію порта з файлу налаштувань [config.json](json/config.json#L17) і запускає сервер
+Після цього, Cloud Commander читає інформацію порта з файлу налаштувань [config.json](http://github.com/coderaiser/cloudcmd/blob/master/json/config.json#L17) і запускає сервер
 на цьому порті ( **8000**, за замовчуванням ),якщо змінних портів не існує( *cloud9*, *cloudfoundry* and *nodester* ).
 Тоді просто наберіть в броузері
 
@@ -287,9 +287,9 @@ so to get it you should type a couple more commands:
 
 Ліцензія
 ---------------
-MIT [license](LICENSE "ліцензія").
+MIT [license](http://github.com/coderaiser/cloudcmd/blob/master/LICENSE "ліцензія").
 
 Щира подяка:
 ---------------
-[Elena Zalitok](http://vk.com/politilena "Олені Заліток") за
-[logo](img/logo/cloudcmd.png "логотип") та [favicon](img/favicon/favicon.png "фавіконку").
+[Polietilena](http://polietilena.github.io "Polietilena") за
+[logo](http://github.com/coderaiser/cloudcmd/blob/master/img/logo/cloudcmd.png "логотип") та [favicon](http://github.com/coderaiser/cloudcmd/blob/master/img/favicon/favicon.png "фавіконку").
