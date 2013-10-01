@@ -34,7 +34,7 @@ Cloud Commander версія 0.4.0 [![NPM version][NPMIMGURL]][NPMURL] [![Depend
 цілком зможемо працювати з кешованою копією папок)*;
 - прив'язка клавіш
 - disabled js support *(працює в режимі обмеження)*.
-- automated minification *client js-files and onstart-reading Cloud manager files on server starting.*
+
 
 **Cloud Commander** використовує усі переваги Js, так що при вимкнутому Js,
 він переходить в *обмежений режим*.
