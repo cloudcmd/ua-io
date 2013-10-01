@@ -1,5 +1,6 @@
 Cloud Commander версія 0.4.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][DependencyStatusIMGURL]][DependencyStatusURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL]
 ===============
+###[Main][MainURL] [Blog][BlogURL] [Demo][DemoURL]
 [NPMIMGURL]:                https://badge.fury.io/js/cloudcmd.png
 [BuildStatusIMGURL]:        https://secure.travis-ci.org/coderaiser/cloudcmd.png?branch=master
 [DependencyStatusIMGURL]:   https://gemnasium.com/coderaiser/cloudcmd.png
@@ -10,6 +11,7 @@ Cloud Commander версія 0.4.0 [![NPM version][NPMIMGURL]][NPMURL] [![Depend
 [DependencyStatusURL]:      https://gemnasium.com/coderaiser/cloudcmd "Dependency Status"
 [FlattrURL]:                https://flattr.com/submit/auto?user_id=coderaiser&url=github.com/coderaiser/cloudcmd&title=cloudcmd&language=&tags=github&category=software "flattr"
 [NPM_INFO_URL]:             https://npmjs.org/package/cloudcmd "npm"
+[Main]:                     http://cloudcmd.io "Головна"
 
 **Cloud Commander** - хмарковий файловий менеджер з консоллю та редактором.
 Демо-версія:
