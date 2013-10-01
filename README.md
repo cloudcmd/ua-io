@@ -20,6 +20,7 @@ Cloud Commander версія 0.4.0 [![NPM version][NPMIMGURL]][NPMURL] [![Depend
 
 
 ![Cloud Commander](https://raw.github.com/coderaiser/cloudcmd/dev/img/logo/cloudcmd.png "Cloud Commander")
+
 [![Flattr][FlattrIMGURL]][FlattrURL]
 
 Переваги
