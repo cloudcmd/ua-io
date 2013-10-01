@@ -18,8 +18,7 @@ Cloud Commander версія. 0.3.0 [![NPM version][NPMIMGURL]][NPMURL] [![Depen
 [appfog] (https://cloudcmd.aws.af.cm "appfog"),
 [jitsu] (https://cloudcmd.jit.su "jitsu").
 
-Google PageSpeed Score : [100](//developers.google.com/speed/pagespeed/insights#url=http_3A_2F_2Fcloudcmd.aws.af.cm_2F&mobile=false "score") (out of 100)
-(or 96 if js or css minification disabled in config.json).
+
 
 ![Cloud Commander](https://raw.github.com/coderaiser/cloudcmd/dev/img/logo/cloudcmd.png "Cloud Commander")
 
