@@ -14,10 +14,7 @@ Cloud Commander версія 0.4.0 [![NPM version][NPMIMGURL]][NPMURL] [![Depend
 [Main]:                     http://cloudcmd.io "Головна"
 
 **Cloud Commander** - хмарковий файловий менеджер з консоллю та редактором.
-Демо-версія:
-[cloudfoundry] (https://cloudcmd.cloudfoundry.com "cloudfoundry"),
-[appfog] (https://cloudcmd.aws.af.cm "appfog"),
-[jitsu] (https://cloudcmd.jit.su "jitsu").
+
 
 
 
