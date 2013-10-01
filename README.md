@@ -105,7 +105,7 @@ Cloud Commander версія 0.4.0 [![NPM version][NPMIMGURL]][NPMURL] [![Depend
 Все що вам потрібно: 
 - встановити [node.js](http://nodejs.org/ "node.js")
 - [завантажити](https://github.com/coderaiser/cloudcmd/archive/master.zip)
-і розпакувати або просто клонувати репозиторій з github (гітхабу):
+і розпакувати або просто клонувати репозиторій з github:
 
 ```
     git clone git://github.com/coderaiser/cloudcmd.git
