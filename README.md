@@ -11,7 +11,7 @@ Cloud Commander версія 0.4.0 [![NPM version][NPMIMGURL]][NPMURL] [![Depend
 [DependencyStatusURL]:      https://gemnasium.com/coderaiser/cloudcmd "Dependency Status"
 [FlattrURL]:                https://flattr.com/submit/auto?user_id=coderaiser&url=github.com/coderaiser/cloudcmd&title=cloudcmd&language=&tags=github&category=software "flattr"
 [NPM_INFO_URL]:             https://npmjs.org/package/cloudcmd "npm"
-[Main]:                     http://cloudcmd.io "Головна"
+[MainURL]:                     http://cloudcmd.io "Головна"
 
 **Cloud Commander** - хмарковий файловий менеджер з консоллю та редактором.
 
