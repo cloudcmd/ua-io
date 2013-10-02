@@ -36,7 +36,7 @@ Cloud Commander версія 0.4.0 [![NPM version][NPMIMGURL]][NPMURL] [![Depend
 - disabled js support *(працює в режимі обмеження)*.
 
 
-**Cloud Commander** використовує усі переваги Js, так що при вимкнутому Js,
+**Cloud Commander** використовує усі переваги js, так що при вимкнутому js,
 він переходить в *обмежений режим*.
 
 
