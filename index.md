@@ -19,9 +19,6 @@ Cloud Commander версія 0.4.0 [![NPM version][NPMIMGURL]][NPMURL] [![Depend
 [DemoURL]:                  http://io.cloudcmd.io "Демо"
 **Cloud Commander** - хмарний файловий менеджер з консоллю та редактором.
 
-
-
-
 ![Cloud Commander](https://raw.github.com/coderaiser/cloudcmd/dev/img/logo/cloudcmd.png "Cloud Commander")
 
 [![Flattr][FlattrIMGURL]][FlattrURL]
@@ -131,7 +128,7 @@ Cloud Commander версія 0.4.0 [![NPM version][NPMIMGURL]][NPMURL] [![Depend
     "analytics"         : true,     /* google analytics suport                  */
     "localStorage"      : true,     /* cache directory data                     */
     "minification" : {              /* minification of js,css,html and img      */
-        "js"    : false,            /* minify module needed                     */
+        "js"    : false,            /* minify module neaded                     */
         "css"   : false,            /* npm i minify                             */
         "html"  : true,
         "img"   : false
