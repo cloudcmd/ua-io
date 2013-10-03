@@ -14,7 +14,7 @@ Cloud Commander версія 0.4.0 [![NPM version][NPMIMGURL]][NPMURL] [![Depend
 [MainURL]:                  http://cloudcmd.io "Головна"
 [BlogURL]:                  http://blog.cloudcmd.io "Блог"
 [DemoURL]:                  http://io.cloudcmd.io "Демо"
-**Cloud Commander** - хмарковий файловий менеджер з консоллю та редактором.
+**Cloud Commander** - хмарний файловий менеджер з консоллю та редактором.
 
 
 
