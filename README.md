@@ -123,7 +123,7 @@ Cloud Commander версія 0.4.0 [![NPM version][NPMIMGURL]][NPMURL] [![Depend
 ```js
 {
     "api_url"           :"/api/v1",
-    "appcache"          : false,    /* cache files for offline use              */
+    "appcache"          : false,    /* кешувати файли для оффлайнового використання   */
     "analytics"         : true,     /* google analytics suport                  */
     "localStorage"      : true,     /* cache directory data                     */
     "minification" : {              /* minification of js,css,html and img      */
