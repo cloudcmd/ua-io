@@ -147,9 +147,8 @@ Cloud Commander версія 0.4.0 [![NPM version][NPMIMGURL]][NPMURL] [![Depend
 
 Сервер
 ---------------
-Standard practices say no non-root process gets to talk to
-the Internet on a port less than 1024.В любому випадку, Я раджу Вам
-запускати Cloud Commander не під рутом. Як це зробити?!
+Зазвичай процеси, що запущено правами не root не можуть звертатися до портів нижче ніж 1024.
+В любому випадку, Я раджу Вам запускати Cloud Commander не під рутом. Як це зробити?!
 Існує декілька простих і швидких шляхів. Один з них - просування портів через iptables. // One of them is port forwarding by iptables.
 Просто запустіть [shell/addtables.sh](http://github.com/coderaiser/cloudcmd/blob/master/shell/addtables.sh) для стандартних опцій.
 
