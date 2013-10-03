@@ -131,7 +131,7 @@ Cloud Commander версія 0.4.0 [![NPM version][NPMIMGURL]][NPMURL] [![Depend
     "analytics"         : true,     /* google analytics suport                  */
     "localStorage"      : true,     /* cache directory data                     */
     "minification" : {              /* minification of js,css,html and img      */
-        "js"    : false,            /* minify module neaded                     */
+        "js"    : false,            /* minify module needed                     */
         "css"   : false,            /* npm i minify                             */
         "html"  : true,
         "img"   : false
