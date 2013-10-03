@@ -124,24 +124,24 @@ Cloud Commander версія 0.4.0 [![NPM version][NPMIMGURL]][NPMURL] [![Depend
 {
     "api_url"           :"/api/v1",
     "appcache"          : false,    /* кешувати файли для оффлайнового використання   */
-    "analytics"         : true,     /* google analytics suport                  */
-    "localStorage"      : true,     /* cache directory data                     */
-    "minification" : {              /* minification of js,css,html and img      */
-        "js"    : false,            /* minify module neaded                     */
-        "css"   : false,            /* npm i minify                             */
+    "analytics"         : true,     /* підтримка google analytics                     */
+    "localStorage"      : true,     /* кешування вмісту папки                         */
+    "minification" : {              /* minification js,css,html та img                */
+        "js"    : false,            /* потрібен модуль minify                         */
+        "css"   : false,            /* npm i minify                                   */
         "html"  : true,
         "img"   : false
     },
     "cache"             : true,
-    "logs"              : false,     /* logs or console ouput                    */
-    "show_keys_panel"   : true,      /* show classic panel with buttons of keys  */
-    "server"            : true,      /* server mode or testing mode              */
-    "socket"            : true       /* enable web sockets                       */
-    "port"              : 8000,      /* http port or null(default)               */
-    "sslPort"           : 443,       /* https port or null(default)              */
-    "ip"                : null,      /* ip or null(default)                      */
-    "ssl"               : false      /* should use https?                        */
-    "rest"              : true       /* enable rest interface                    */
+    "logs"              : false,     /* виводити в логи чи в консоль                               */
+    "show_keys_panel"   : true,      /* показати класичну панель з кнопками функціональних клавіш  */
+    "server"            : true,      /* режим сервера чи тестування                                */
+    "socket"            : true       /* увімкнути web сокети                                       */
+    "port"              : 8000,      /* http порт чи null(за замовчанням)                          */
+    "sslPort"           : 443,       /* https порт чи null(за замовчанням)                         */
+    "ip"                : null,      /* ip чи null(за замовчуванням)                               */
+    "ssl"               : false      /* використовувати https?                                     */
+    "rest"              : true       /* увімкнути решту інтерфейса                                 */
 }
 ```
 
