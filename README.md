@@ -172,8 +172,8 @@ Cloud Commander версія 0.4.0 [![NPM version][NPMIMGURL]][NPMURL] [![Depend
 @:/tmp/cloudcmd (dev) $ sudo iptables -t nat -D PREROUTING 2
 ```
 
-To run Cloud Commander as daemon in linux you could set **log** to true in config and
-do something like this:
+Для запуску Cloud Commander під daemon в linux встановіть **log** в "істину" в config-файлі і
+зробіть щось на зразок:
     
     nohup node cloudcmd
 
