@@ -179,12 +179,12 @@ Cloud Commander версія 0.4.0 [![NPM version][NPMIMGURL]][NPMURL] [![Depend
 
 Авторизація
 ---------------
-Cloud Commander може авторизовувати клієнтів через openID на GitHub (ГітХаб).
-Все що для цього потрібно - All things that should be done is must be added **id** and **secret** of application
-from github settings page and added to **config.json** (id just) and env varible (secret)
-with names: *github_id*, *github_secret*, *dropbox_key*, *dropbox_secret* etc.
-For more information see **config.json** and **shell/seret.bat** *(on win32)*
-or **shell/secret.sh** *(on nix)*.
+Cloud Commander може авторизовувати клієнтів через openID на GitHub.
+Все що для цього потрібно - додати **id** і **secret** додатків зі сторінки 
+налаштувань github в **config.json** (id just) and env varible (secret)
+з іменами: *github_id*, *github_secret*, *dropbox_key*, *dropbox_secret* і т.д.
+Для додаткової інформації, дивіться **config.json** та **shell/seret.bat** *(для win32)*
+або **shell/secret.sh** *(для nix)*.
 
 
 Запуск
