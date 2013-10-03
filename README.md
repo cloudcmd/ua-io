@@ -164,8 +164,8 @@ Cloud Commander версія 0.4.0 [![NPM version][NPMIMGURL]][NPMURL] [![Depend
     REDIRECT   tcp  --  anywhere             anywhere             tcp dpt:http redir ports 8000
     REDIRECT   tcp  --  anywhere             anywhere             tcp dpt:https redir ports 4430
 
-If you would want to get things back just clear rules ( **1** and **2** it's rules numbers,
-in your list they could differ).
+Якщо захочете все повернути, просто очистіть правила ( **1** та **2** це номера правил,
+у вашому випадку вони можуть відрізнятися).
 
 ```sh
 @:/tmp/cloudcmd (dev) $ sudo iptables -t nat -D PREROUTING 1
