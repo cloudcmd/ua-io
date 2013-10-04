@@ -1,6 +1,3 @@
----
-layout: default
----
 Cloud Commander версія 0.4.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][DependencyStatusIMGURL]][DependencyStatusURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL]
 ===============
 ###[Головна][MainURL] [Блог][BlogURL] [Демо][DemoURL]
@@ -33,7 +30,7 @@ Cloud Commander версія 0.4.0 [![NPM version][NPMIMGURL]][NPMURL] [![Depend
 *(тож якщо щось станеться з сигналом або ми втратимо зв'язок з мережею, ми
 цілком зможемо працювати з кешованою копією папок)*;
 - прив'язка клавіш
-- disabled js support *(працює в режимі обмеження)*.
+- відключено підтримку js *(працює в режимі обмеження)*.
 
 
 **Cloud Commander** використовує усі переваги js, так що при вимкнутому js,
@@ -50,6 +47,7 @@ Cloud Commander версія 0.4.0 [![NPM version][NPMIMGURL]][NPMURL] [![Depend
 ---------------
 В усіх сучасних веб оглядачах (окрім Інтернет Експлорера, бо він особливий) гарячі клавіші працюють.
 Короткий список:
+
 - **F1**                - допомога
 - **F2**                - змінити назву обраного файлу
 - **F3**                - переглянути
@@ -121,36 +119,36 @@ Cloud Commander версія 0.4.0 [![NPM version][NPMIMGURL]][NPMURL] [![Depend
 Налаштування
 ---------------
 Всі головні налаштування можна встановити в config.json.
+
 ```js
 {
     "api_url"           :"/api/v1",
-    "appcache"          : false,    /* cache files for offline use              */
-    "analytics"         : true,     /* google analytics suport                  */
-    "localStorage"      : true,     /* cache directory data                     */
-    "minification" : {              /* minification of js,css,html and img      */
-        "js"    : false,            /* minify module neaded                     */
-        "css"   : false,            /* npm i minify                             */
+    "appcache"          : false,    /* кешувати файли для оффлайнового використання   */
+    "analytics"         : true,     /* підтримка google analytics                     */
+    "localStorage"      : true,     /* кешування вмісту папки                         */
+    "minification" : {              /* minification js,css,html та img                */
+        "js"    : false,            /* потрібен модуль minify                         */
+        "css"   : false,            /* npm i minify                                   */
         "html"  : true,
         "img"   : false
     },
     "cache"             : true,
-    "logs"              : false,     /* logs or console ouput                    */
-    "show_keys_panel"   : true,      /* show classic panel with buttons of keys  */
-    "server"            : true,      /* server mode or testing mode              */
-    "socket"            : true       /* enable web sockets                       */
-    "port"              : 8000,      /* http port or null(default)               */
-    "sslPort"           : 443,       /* https port or null(default)              */
-    "ip"                : null,      /* ip or null(default)                      */
-    "ssl"               : false      /* should use https?                        */
-    "rest"              : true       /* enable rest interface                    */
+    "logs"              : false,     /* виводити в логи чи в консоль                               */
+    "show_keys_panel"   : true,      /* показати класичну панель з кнопками функціональних клавіш  */
+    "server"            : true,      /* режим сервера чи тестування                                */
+    "socket"            : true       /* увімкнути web сокети                                       */
+    "port"              : 8000,      /* http порт чи null(за замовчанням)                          */
+    "sslPort"           : 443,       /* https порт чи null(за замовчанням)                         */
+    "ip"                : null,      /* ip чи null(за замовчуванням)                               */
+    "ssl"               : false      /* використовувати https?                                     */
+    "rest"              : true       /* увімкнути решту інтерфейса                                 */
 }
 ```
 
 Сервер
 ---------------
-Standard practices say no non-root process gets to talk to
-the Internet on a port less than 1024.В любому випадку, Я раджу Вам
-запускати Cloud Commander не під рутом. Як це зробити?!
+Зазвичай процеси, що запущено правами не root не можуть звертатися до портів нижче ніж 1024.
+В любому випадку, Я раджу Вам запускати Cloud Commander не під рутом. Як це зробити?!
 Існує декілька простих і швидких шляхів. Один з них - просування портів через iptables. // One of them is port forwarding by iptables.
 Просто запустіть [shell/addtables.sh](http://github.com/coderaiser/cloudcmd/blob/master/shell/addtables.sh) для стандартних опцій.
 
@@ -166,27 +164,27 @@ the Internet on a port less than 1024.В любому випадку, Я рад�
     REDIRECT   tcp  --  anywhere             anywhere             tcp dpt:http redir ports 8000
     REDIRECT   tcp  --  anywhere             anywhere             tcp dpt:https redir ports 4430
 
-If you would want to get things back just clear rules ( **1** and **2** it's rules numbers,
-in your list they could differ).
+Якщо захочете все повернути, просто очистіть правила ( **1** та **2** це номера правил,
+у вашому випадку вони можуть відрізнятися).
 
 ```sh
 @:/tmp/cloudcmd (dev) $ sudo iptables -t nat -D PREROUTING 1
 @:/tmp/cloudcmd (dev) $ sudo iptables -t nat -D PREROUTING 2
 ```
 
-To run Cloud Commander as daemon in linux you could set **log** to true in config and
-do something like this:
+Для запуску Cloud Commander під daemon в linux встановіть **log** в "істину" в config-файлі і
+зробіть щось на зразок:
     
     nohup node cloudcmd
 
 Авторизація
 ---------------
-Cloud Commander може авторизовувати клієнтів через openID на GitHub (ГітХаб).
-Все що для цього потрібно - All things that should be done is must be added **id** and **secret** of application
-from github settings page and added to **config.json** (id just) and env varible (secret)
-with names: *github_id*, *github_secret*, *dropbox_key*, *dropbox_secret* etc.
-For more information see **config.json** and **shell/seret.bat** *(on win32)*
-or **shell/secret.sh** *(on nix)*.
+Cloud Commander може авторизовувати клієнтів через openID на GitHub.
+Все що для цього потрібно - додати **id** і **secret** додатків зі сторінки 
+налаштувань github в **config.json** (id just) and env varible (secret)
+з іменами: *github_id*, *github_secret*, *dropbox_key*, *dropbox_secret* і т.д.
+Для додаткової інформації, дивіться **config.json** та **shell/seret.bat** *(для win32)*
+або **shell/secret.sh** *(для nix)*.
 
 
 Запуск
