@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 Cloud Commander версія 0.4.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][DependencyStatusIMGURL]][DependencyStatusURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL]
 ===============
 ###[Головна][MainURL] [Блог][BlogURL] [Демо][DemoURL]
