@@ -1,4 +1,5 @@
-markdown    : redcarpet
-tagLine     : Українською
-viewOn      : Подивитись на
-download    : Завантажити
+markdown      : redcarpet
+tagLine       : Українською
+viewOn        : Подивитись на
+download      : Завантажити
+maintainedBy  : Проект підтримує
