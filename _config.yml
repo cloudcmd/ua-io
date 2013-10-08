@@ -1,4 +1,6 @@
 markdown      : redcarpet
+redcarpet:
+  extensions: ["with_toc_data"]
 tagLine       : Хмарний файловий менеджер з консоллю та редактором
 viewOn        : Подивитись на
 download      : Завантажити
