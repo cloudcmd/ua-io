@@ -1,5 +1,6 @@
-markdown      : redcarpet
-tagLine       : Хмарний файловий менеджер з консоллю та редактором
-viewOn        : Подивитись на
-download      : Завантажити
-maintainedBy  : Проект підтримує
+markdown        : redcarpet
+tagLine         : Хмарний файловий менеджер з консоллю та редактором
+viewOn          : Подивитись на
+download        : Завантажити
+maintainedBy    : Проект підтримує
+yandex          : 5c03543d552e9150
