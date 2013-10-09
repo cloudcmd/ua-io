@@ -257,14 +257,14 @@ Cloud Commander може авторизовувати клієнтів чере�
 
 Ваш вклад в розвиток проекту
 ---------------
-If you would like to contribute - send pull request to dev branch.
-Getting dev version of **Cloud Commander**:
+Якщо ви хочете долучитися до розробки - відправте pull запит в dev гілку.
+Отримання dev версії **Cloud Commander**:
 
     git clone git://github.com/coderaiser/cloudcmd.git
     git checkout dev
 
-It is possible thet dev version Cloud Commander will needed dev version of Minify,
-so to get it you should type a couple more commands:
+Можливо вам знадобиться dev версія Minify,
+щоб отримати її, вам потрібно ввести декілька команд:
 
     cd node_modules
     rm -rf minify
