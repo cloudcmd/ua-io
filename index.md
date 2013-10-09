@@ -255,7 +255,7 @@ Cloud Commander може авторизовувати клієнтів чере�
 [dropbox-jsURL]:            //github.com/dropbox/dropbox-js "dropbox-js"
 [jqueryURL]:                //jquery.com
 
-Contributing
+Ваш вклад в розвиток проекту
 ---------------
 If you would like to contribute - send pull request to dev branch.
 Getting dev version of **Cloud Commander**:
