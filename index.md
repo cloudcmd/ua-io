@@ -91,6 +91,7 @@ Cloud Commander 0.4.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][
 Меню
 ---------------
 Натискання на праву клавішу мишки, викликає меню з наступними пунктами:
+
 - Перегляд
 - Редагування
 - Змінити назву
@@ -105,6 +106,7 @@ Cloud Commander 0.4.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][
 
 **Cloud Commander** встановлюється дуже просто.
 Все що вам потрібно: 
+
 - встановити [node.js](http://nodejs.org/ "node.js")
 - [завантажити](https://github.com/coderaiser/cloudcmd/archive/master.zip)
 і розпакувати або просто клонувати репозиторій з github:
