@@ -11,3 +11,5 @@ canonical       : ua.cloudcmd.io
 repoName        : cloudcmd/io-ua/edit/gh-pages/index.md
 improveText     : "Знайшли помилку? Допоможіть її виправити."
 repoSource      : coderaiser/cloudcmd
+image           : http://cdn.cloudcmd.io/img/logo/cloudcmd.png
+favicon         : http://cdn.cloudcmd.io/img/favicon/favicon.png
