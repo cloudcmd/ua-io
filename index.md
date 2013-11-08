@@ -94,6 +94,11 @@ Cloud Commander 0.6.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][
 - **Shift + F10**       - контекстне меню
 - **~**                 - консоль
 
+Редактор
+---------------
+[Демо](http://io.cloudcmd.io/fs/etc#/edit/passwd "Edit")
+![Edit](/img/screen/edit.png "Edit")
+
 Гарячі клавіші переглядача
 ---------------
 - **F3**                - відкрити
