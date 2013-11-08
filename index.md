@@ -100,10 +100,13 @@ Cloud Commander 0.6.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][
 ![Edit](/img/screen/edit.png "Edit")
 
 
-###Гарячі клавіші редактора
+###Гарячі клавіші
 - **F4**                - відкрити
 - **Ctrl + s**          - зберегти
 - **Esc**               - закрити
+ 
+Детальніше [Ace keyboard shortcuts](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts "Ace keyboard shortcuts").
+
 
 Меню
 ---------------
