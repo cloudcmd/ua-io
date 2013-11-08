@@ -360,7 +360,7 @@ Cloud Commander може авторизовувати клієнтів чере�
 
 Ліцензія
 ---------------
-MIT [license](http://github.com/coderaiser/cloudcmd/blob/master/LICENSE "ліцензія").
+MIT [license](http://cloudcmd.io/LICENSE "ліцензія").
 
 Щира подяка:
 ---------------
