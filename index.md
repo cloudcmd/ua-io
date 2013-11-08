@@ -99,13 +99,8 @@ Cloud Commander 0.6.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][
 [Демо](http://io.cloudcmd.io/fs/etc#/edit/passwd "Edit")
 ![Edit](/img/screen/edit.png "Edit")
 
-Гарячі клавіші переглядача
----------------
-- **F3**                - відкрити
-- **Esc**               - закрити
 
-Гарячі клавіші редактора
----------------
+###Гарячі клавіші редактора
 - **F4**                - відкрити
 - **Ctrl + s**          - зберегти
 - **Esc**               - закрити
