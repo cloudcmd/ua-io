@@ -35,26 +35,34 @@ Cloud Commander 0.6.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][
 
 Переваги
 ---------------
-- повна сумісність з браузерами *(іе6+,хром,сафарі,опера,фаєрфокс)*;
-- чуйний дизайн
-- одноразове завантаження сторінки, *and then just one-time json-dir-listings loading
-(з можливістю оновлення).*
-- кешування прочитаних папок у localStorage
-*(тож якщо щось станеться з сигналом або ми втратимо зв'язок з мережею, ми
-цілком зможемо працювати з кешованою копією папок)*;
-- прив'язка клавіш
-- відключено підтримку js *(працює в режимі обмеження)*.
-
-
-**Cloud Commander** використовує усі переваги js, так що при вимкнутому js,
-він переходить в *обмежений режим*.
-
-
-Особливості обмеженого режиму
+- Відкритий код.
+- Має дві стандартні панелі.
+- Працює під Windows, Linux та Mac OS.
+- Може використовуватись локально або віддалено.
+- Має гарну консоль та редактор.
+- Написано на JavaScript/Node.js.
+ 
+Встановлення
 ---------------
-- без прив'язки до клавіш
-- без локального кешування
-- повне завантаження усієї веб сторінки (зі стилями, js-скриптами, html-сторінками тощо).
+[![NPM_INFO][NPM_INFO_IMG]][NPM_INFO_URL]
+
+**Cloud Commander** встановлюється дуже просто.
+Все що вам потрібно: 
+
+- встановити [node.js](http://nodejs.org/ "node.js")
+- [завантажити](https://github.com/coderaiser/cloudcmd/archive/master.zip)
+і розпакувати або просто клонувати репозиторій з github:
+
+```
+    git clone git://github.com/coderaiser/cloudcmd.git
+    cd cloudcmd
+    node cloudcmd
+```
+або встановити в npm:
+```
+    npm i cloudcmd -g
+    cloudcmd
+```
 
 Гарячі клавіші
 ---------------
@@ -108,28 +116,6 @@ Cloud Commander 0.6.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][
 - Вивантажити до (Dropbox, Github, GDrive)
 - Завантажити
 - Новий (Файл, Папка, з хмарки)
-
-Встановлення
----------------
-[![NPM_INFO][NPM_INFO_IMG]][NPM_INFO_URL]
-
-**Cloud Commander** встановлюється дуже просто.
-Все що вам потрібно: 
-
-- встановити [node.js](http://nodejs.org/ "node.js")
-- [завантажити](https://github.com/coderaiser/cloudcmd/archive/master.zip)
-і розпакувати або просто клонувати репозиторій з github:
-
-```
-    git clone git://github.com/coderaiser/cloudcmd.git
-    cd cloudcmd
-    node cloudcmd
-```
-або встановити в npm:
-```
-    npm i cloudcmd -g
-    cloudcmd
-```
 
 Налаштування
 ---------------
