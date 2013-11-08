@@ -364,5 +364,7 @@ MIT [license](http://github.com/coderaiser/cloudcmd/blob/master/LICENSE "ліц�
 
 Щира подяка:
 ---------------
-[Polietilena](http://polietilena.github.io "Polietilena") за
-[logo](http://github.com/coderaiser/cloudcmd/blob/master/img/logo/cloudcmd.png "логотип") та [favicon](http://github.com/coderaiser/cloudcmd/blob/master/img/favicon/favicon.png "фавіконку").
+- [Polietilena](http://polietilena.github.io/ "Polietilena") за [логотип](http://cloudcmd.io/img/logo/cloudcmd.png "логотип") так [favicon](http://cloudcmd.io/img/favicon/favicon.png "favicon");
+- [Elec-ua](https://github.com/elec-ua)
+    - [російский](http://ru.cloudcmd.io "Cloud Commander російскою") та [український](http://ua.cloudcmd.io "Cloud Commander українською") переклади;
+    - налаштування: [шаблон](html/config.html) та [стилі](css/config.css);
