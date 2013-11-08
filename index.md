@@ -152,16 +152,12 @@ Console
 ```js
 {
     "api_url"           :"/api/v1",
-    "appcache"          : false,    /* кешувати файли для оффлайнового використання   */
-    "analytics"         : true,     /* підтримка google analytics                     */
-    "localStorage"      : true,     /* кешування вмісту папки                         */
-    "minification" : {              /* minification js,css,html та img                */
-        "js"    : false,            /* потрібен модуль minify                         */
-        "css"   : false,            /* npm i minify                                   */
-        "html"  : true,
-        "img"   : false
-    },
-    "cache"             : true,
+    "appcache"          : false,     /* кешувати файли для оффлайнового використання               */
+    "analytics"         : true,      /* підтримка google analytics                                 */
+    "localStorage"      : true,      /* кешування вмісту папки                                     */
+    "minify"            : true,      /* minification js,css,html та img                            */
+    "cache"             : true,      /* додати контроль кешу                                       */
+    "online"            : true,      /* загрузити файли js з cdn або Local path                    */
     "logs"              : false,     /* виводити в логи чи в консоль                               */
     "show_keys_panel"   : true,      /* показати класичну панель з кнопками функціональних клавіш  */
     "server"            : true,      /* режим сервера чи тестування                                */
@@ -172,6 +168,19 @@ Console
     "ssl"               : false      /* використовувати https?                                     */
     "rest"              : true       /* увімкнути решту інтерфейса                                 */
 }
+```
+
+Якщо ви змінили **config** і хочете продовжувати оновлюватись via git,
+вам потрібно виконати наступну команду в корневій директорії **Cloud Commander**:
+
+```
+git update-index --assume-unchanged json/config.json
+```
+
+Щоб повернутися до відстежування:
+
+```
+git update-index --no-assume-unchanged json/config.json
 ```
 
 Сервер
