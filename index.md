@@ -214,14 +214,14 @@ git update-index --no-assume-unchanged json/config.json
 ```
 
 ###nginx
-Get [nginx](http://nginx.org/ "nginx"). On linux it could be done this way:
+Візьміть [nginx](http://nginx.org/ "nginx"). В linux це можна зробити наступним чином:
 
 ```sh
 sudo apt-get install nginx #for ubuntu and debian
 ```
 
-Than make host file **/etc/nginx/sites-enabled/io.cloudcmd.io**
-( *io.cloudcmd.io* is your domain name) with content:
+І зробіть хост файл **/etc/nginx/sites-enabled/io.cloudcmd.io**
+( *io.cloudcmd.io* ваше доменне ім'я) з вмістом:
 
 ```sh
 server {
