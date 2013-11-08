@@ -78,7 +78,7 @@ Cloud Commander 0.6.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][
 - **F7**                - нова папка
 - **F8, Delete**        - знищити обраний файл
 - **F9**                - меню
-- **F10**               - налаштування
+- **F10**               - настройки
 - **Ctrl + r**          - оновити вміст папки
 - **Ctrl + d**          - очистити локальний кеш, що містить вміст папки
 - **Alt  + q**          - вимкнути прив'язку клавіш
@@ -340,6 +340,8 @@ Cloud Commander може авторизовувати клієнтів чере�
 
 Історія версій
 ---------------
+- *2013.11.08*, **[v0.6.0](//github.com/coderaiser/cloudcmd-archive/raw/master/cloudcmd-v0.6.0.zip)**
+- *2013.10.17*, **[v0.5.0](//github.com/coderaiser/cloudcmd-archive/raw/master/cloudcmd-v0.5.0.zip)**
 - *2013.09.27*, **[v0.4.0](//github.com/coderaiser/cloudcmd-archive/raw/master/cloudcmd-v0.4.0.zip)**
 - *2013.07.01*, **[v0.3.0](//github.com/coderaiser/cloudcmd-archive/raw/master/cloudcmd-v0.3.0.zip)**
 - *2013.04.22*, **[v0.2.0](//github.com/coderaiser/cloudcmd-archive/raw/master/cloudcmd-v0.2.0.zip)**
