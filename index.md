@@ -2,7 +2,7 @@
 layout: default
 ---
 
-Cloud Commander 0.5.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][DependencyStatusIMGURL]][DependencyStatusURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL]
+Cloud Commander 0.6.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][DependencyStatusIMGURL]][DependencyStatusURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL]
 ===============
 ###[Головна][MainURL] [Блог][BlogURL] [Демо][DemoURL]
 [NPMIMGURL]:                https://badge.fury.io/js/cloudcmd.png
