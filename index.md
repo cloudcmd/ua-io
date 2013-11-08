@@ -83,7 +83,7 @@ Cloud Commander 0.6.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][
 - **Ctrl + d**          - очистити локальний кеш, що містить вміст папки
 - **Alt  + q**          - вимкнути прив'язку клавіш
 - **Alt  + s**          - відновити усі прив'язки клавіші
-- **Ctrl + a**          - виділити (обрати) усі файли на панелі
+- **Ctrl + a**          - виділити усі файли на панелі
 - **up, down, enter**   - пересування файловою систему
 - **Tab**               - переміщення між панелями
 - **Page Up**           - вгору на одну сторінку
@@ -106,12 +106,12 @@ Cloud Commander 0.6.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][
 - **Ctrl + s**          - зберегти
 - **Esc**               - закрити
  
-Детальніше [Ace keyboard shortcuts](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts "Ace keyboard shortcuts").
+Детальніше [Гарячі клавіші Ace](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts "Гарячі клавіші Ace").
 
-Console
+Консоль
 ---------------
-[Demo](http://io.cloudcmd.io#/console "Console")
-![Console](http://cloudcmd.io/img/screen/console.png "Console")
+[Демо](http://io.cloudcmd.io#/console "Консоль")
+![Консоль](http://cloudcmd.io/img/screen/console.png "Консоль")
 
 ###Гарячі клавіші
 - **~**                 - відкрити
@@ -119,8 +119,8 @@ Console
 
 Налаштування
 ---------------
-[Demo](http://io.cloudcmd.io#/config "Config")
-![Console](http://cloudcmd.io/img/screen/config.png "Config")
+[Демо](http://io.cloudcmd.io#/config "Налаштування")
+![Налаштування](http://cloudcmd.io/img/screen/config.png "Налаштування")
 
 ###Гарячі клавіші
 - **F10**               - відкрити
@@ -128,8 +128,8 @@ Console
 
 Меню
 ---------------
-[Demo](http://io.cloudcmd.io#/menu "Menu")
-![Menu](http://cloudcmd.io/img/screen/menu.png "Menu")
+[Демо](http://io.cloudcmd.io#/menu "Меню")
+![Menu](http://cloudcmd.io/img/screen/menu.png "Меню")
 Натискання на праву клавішу мишки, викликає меню з наступними пунктами:
 
 - Перегляд
