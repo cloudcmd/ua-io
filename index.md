@@ -107,6 +107,14 @@ Cloud Commander 0.6.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][
  
 Детальніше [Ace keyboard shortcuts](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts "Ace keyboard shortcuts").
 
+Console
+---------------
+[Demo](http://io.cloudcmd.io#/console "Console")
+![Console](/img/screen/console.png "Console")
+
+###Гарячі клавіші
+- **~**                 - відкрити
+- **Esc**               - закрити
 
 Меню
 ---------------
