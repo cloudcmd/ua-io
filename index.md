@@ -97,7 +97,7 @@ Cloud Commander 0.6.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][
 Редактор
 ---------------
 [Демо](http://io.cloudcmd.io/fs/etc#/edit/passwd "Edit")
-![Edit](/img/screen/edit.png "Edit")
+![Edit](http://cloudcmd.io/img/screen/edit.png "Edit")
 
 
 ###Гарячі клавіші
@@ -110,7 +110,7 @@ Cloud Commander 0.6.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][
 Console
 ---------------
 [Demo](http://io.cloudcmd.io#/console "Console")
-![Console](/img/screen/console.png "Console")
+![Console](http://cloudcmd.io/img/screen/console.png "Console")
 
 ###Гарячі клавіші
 - **~**                 - відкрити
@@ -119,7 +119,7 @@ Console
 Налаштування
 ---------------
 [Demo](http://io.cloudcmd.io#/config "Config")
-![Console](/img/screen/config.png "Config")
+![Console](http://cloudcmd.io/img/screen/config.png "Config")
 
 ###Гарячі клавіші
 - **F10**               - відкрити
@@ -128,7 +128,7 @@ Console
 Меню
 ---------------
 [Demo](http://io.cloudcmd.io#/menu "Menu")
-![Menu](/img/screen/menu.png "Menu")
+![Menu](http://cloudcmd.io/img/screen/menu.png "Menu")
 Натискання на праву клавішу мишки, викликає меню з наступними пунктами:
 
 - Перегляд
@@ -187,7 +187,9 @@ git update-index --no-assume-unchanged json/config.json
 ---------------
 Зазвичай процеси, що запущено правами не root не можуть звертатися до портів нижче ніж 1024.
 В любому випадку, Я раджу Вам запускати Cloud Commander не під рутом. Як це зробити?!
-Існує декілька простих і швидких шляхів. Один з них - просування портів через iptables. // One of them is port forwarding by iptables.
+Існує декілька простих і швидких шляхів. Один з них - просування портів через iptables.
+
+###Iptables
 Просто запустіть [shell/addtables.sh](http://github.com/coderaiser/cloudcmd/blob/master/shell/addtables.sh) для стандартних опцій.
 
 ```sh
@@ -208,6 +210,35 @@ git update-index --no-assume-unchanged json/config.json
 ```sh
 @:/tmp/cloudcmd (dev) $ sudo iptables -t nat -D PREROUTING 1
 @:/tmp/cloudcmd (dev) $ sudo iptables -t nat -D PREROUTING 2
+```
+
+###nginx
+Get [nginx](http://nginx.org/ "nginx"). On linux it could be done this way:
+
+```sh
+sudo apt-get install nginx #for ubuntu and debian
+```
+
+Than make host file **/etc/nginx/sites-enabled/io.cloudcmd.io**
+( *io.cloudcmd.io* is your domain name) with content:
+
+```sh
+server {
+    listen 80;
+    client_max_body_size 100m;
+    server_name io.cloudcmd.io;
+    access_log /var/log/nginx/io.cloudcmd.io.access.log;
+    location / {
+        proxy_pass    http://127.0.0.1:8000/;
+    }
+}
+```
+
+```sh
+# create symlink of this file
+ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
+# restart nginx
+/etc/init.d/nginx restart
 ```
 
 Для запуску Cloud Commander під daemon в linux встановіть **log** в "істину" в config-файлі і
