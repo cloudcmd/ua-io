@@ -29,7 +29,7 @@ Cloud Commander 0.6.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][
 
 **Cloud Commander** - хмарний файловий менеджер з консоллю та редактором.
 
-![Cloud Commander](http://cdn.cloudcmd.io/img/logo/cloudcmd.png "Cloud Commander")
+![Cloud Commander](http://cloudcmd.io/img/logo/cloudcmd.png "Cloud Commander")
 
 [![Flattr][FlattrIMGURL]][FlattrURL]
 
