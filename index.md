@@ -2,7 +2,7 @@
 layout: default
 ---
 
-Cloud Commander 0.6.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][DependencyStatusIMGURL]][DependencyStatusURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL]
+Cloud Commander 0.7.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][DependencyStatusIMGURL]][DependencyStatusURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL]
 ===============
 ###[Головна][MainURL] [Блог][BlogURL] Наживо(![IO][IO_LIVE_IMG] [IO][IOURL], ![JitSu][JitSu_LIVE_IMG] [JitSu][JitSuURL], ![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL] ![RunKite][RunKite_LIVE_IMG] [RunKite][RunKiteURL])
 [NPMIMGURL]:                https://badge.fury.io/js/cloudcmd.png
@@ -22,10 +22,11 @@ Cloud Commander 0.6.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][
 [JitSuURL]:                 http://cloudcmd.jit.su "JitSu"
 [HerokuURL]:                http://cloudcmd.herokuapp.com/ "Heroku"
 [RunKiteURL]:               http://cloudcmd.apps.runkite.com/ "RunKite"
-[IO_LIVE_IMG]:              http://status-ok.cloudcmd.io/host/io.cloudcmd.io "IO"
-[JitSu_LIVE_IMG]:           http://status-ok.cloudcmd.io/host/cloudcmd.jit.su "JitSu"
-[HEROKU_LIVE_IMG]:          http://status-ok.cloudcmd.io/host/cloudcmd.herokuapp.com "Heroku"
-[RunKite_LIVE_IMG]:         http://status-ok.cloudcmd.io/host/cloudcmd.apps.runkite.com/ "RunKite"
+[RunKiteURL]:               http://cloudcmd.apps.runkite.com/ "RunKite"
+[IO_LIVE_IMG]:              https://status-ok.cloudcmd.io/host/io.cloudcmd.io/fs?json "IO"
+[JitSu_LIVE_IMG]:           https://status-ok.cloudcmd.io/host/cloudcmd.jit.su/fs?json "JitSu"
+[HEROKU_LIVE_IMG]:          https://status-ok.cloudcmd.io/host/cloudcmd.herokuapp.com/fs?json "Heroku"
+[RunKite_LIVE_IMG]:         https://status-ok.cloudcmd.io/host/cloudcmd.apps.runkite.com/fs?json "RunKite"
 
 **Cloud Commander** - хмарний файловий менеджер з консоллю та редактором.
 
@@ -36,11 +37,11 @@ Cloud Commander 0.6.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][
 Переваги
 ---------------
 - Відкритий код.
-- Має дві стандартні панелі.
+- Має дві класичні панелі.
 - Працює під Windows, Linux та Mac OS.
 - Може використовуватись локально або віддалено.
 - Має гарну консоль та редактор.
-- Написано на JavaScript/Node.js.
+- Написаний на JavaScript/Node.js.
  
 Встановлення
 ---------------
@@ -63,6 +64,17 @@ Cloud Commander 0.6.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][
     npm i cloudcmd -g
     cloudcmd
 ```
+
+Додаткові модулі
+---------------
+**Серверна частина Cloud Commander** не використовує додаткові модулі для основного функціоналу.
+Але для роботи консолі, а також мінімізації, оптимізації додатково можна 
+призначити (та встановити) модулі [Minify] (https://github.com/coderaiser/minify "Minify")
+та [socket.io] (https://github.com/LearnBoost/socket.io "Socket.IO").
+
+Щоб встановити додаткові модулі, напишіть знаходячись в папці **Cloud Commander**:
+
+    npm i
 
 Гарячі клавіші
 ---------------
@@ -152,27 +164,29 @@ Cloud Commander 0.6.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][
 
 ```js
 {
-    "api_url"           :"/api/v1",
-    "appcache"          : false,     /* кешувати файли для оффлайнового використання               */
-    "analytics"         : true,      /* підтримка google analytics                                 */
-    "localStorage"      : true,      /* кешування вмісту папки                                     */
-    "minify"            : true,      /* minification js,css,html та img                            */
-    "cache"             : true,      /* додати контроль кешу                                       */
-    "online"            : true,      /* загрузити файли js з cdn або Local path                    */
-    "logs"              : false,     /* виводити в логи чи в консоль                               */
-    "show_keys_panel"   : true,      /* показати класичну панель з кнопками функціональних клавіш  */
-    "server"            : true,      /* режим сервера чи тестування                                */
-    "socket"            : true       /* увімкнути web сокети                                       */
-    "port"              : 8000,      /* http порт чи null(за замовчанням)                          */
-    "sslPort"           : 443,       /* https порт чи null(за замовчанням)                         */
-    "ip"                : null,      /* ip чи null(за замовчуванням)                               */
-    "ssl"               : false      /* використовувати https?                                     */
-    "rest"              : true       /* увімкнути решту інтерфейса                                 */
+    "apiURL "           :"/api/v1",
+    "appCache"          : false,     /* кешувати файли для оффлайнового використання                */
+    "analytics"         : true,      /* підтримка google analytics                                  */
+    "diff"              : false,     /* при збереженні - відсилає патч, а не повний файл            */
+    "notifications"     : false,     /* показувати сповіщення, коли вкладка не активна              */
+    "localStorage"      : true,      /* кешування вмісту папки                                      */
+    "minify"            : true,      /* мініфікація js,css,html та зображень                        */
+    "cache"             : true,      /* додати контроль кешу                                        */
+    "online"            : true,      /* загрузити файли js з cdn або Local path                     */
+    "logs"              : false,     /* виводити в логи чи в консоль                                */
+    "showKeysPanel"     : true,      /* показати класичну панель з кнопками функціональних клавіш   */
+    "server"            : true,      /* режим сервера чи тестування                                 */
+    "socket"            : true       /* увімкнути web сокети                                        */
+    "port"              : 8000,      /* http порт                                                   */
+    "sslPort"           : 443,       /* https порт                                                  */
+    "ip"                : null,      /* ip чи null(за замовчуванням)                                */
+    "ssl"               : false      /* використовувати https?                                      */
+    "rest"              : true       /* увімкнути решту інтерфейса                                  */
 }
 ```
 
-Якщо ви змінили **config** і хочете продовжувати оновлюватись via git,
-вам потрібно виконати наступну команду в корневій директорії **Cloud Commander**:
+Якщо ви змінили **config** і хочете продовжувати оновлюватись за допомогою git,
+вам потрібно виконати наступну команду в кореневій директорії **Cloud Commander**:
 
 ```
 git update-index --assume-unchanged json/config.json
@@ -235,6 +249,34 @@ server {
 }
 ```
 
+Якщо ви бажаєте додати **ssl**, додайте декілька рядків в розділ серверу:
+
+```sh
+server {
+    listen 443;
+    client_max_body_size 100m;
+    ssl                  on;
+    ssl_certificate      /home/coderaiser/cloudcmd/ssl/ssl.crt;
+    ssl_certificate_key  /home/coderaiser/cloudcmd/ssl/ssl.key;
+    server_name io.cloudcmd.io;
+    access_log /var/log/nginx/io.cloudcmd.io.access.log;
+    location / {
+        proxy_pass    http://127.0.0.1:8000/;
+    }
+}
+```
+
+Якщо вам потрібне перенаправлення з **http** до **https**, просто зробіть так:
+
+```sh
+server {
+    listen 80;
+    server_name admin.cloudcmd.io;
+    rewrite ^ https://io.cloudcmd.io$request_uri? permanent; #301 redirect
+    access_log /var/log/nginx/io.cloudcmd.io.access.log;
+}
+```
+
 ```sh
 # create symlink of this file
 ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
@@ -274,6 +316,7 @@ Cloud Commander може авторизовувати клієнтів чере�
 або
 
     http://localhost:8000
+    
 Оновлення
 ---------------
 **Cloud Commander** дуже часто оновлюється.
@@ -289,17 +332,6 @@ Cloud Commander може авторизовувати клієнтів чере�
 
     npm r cloudcmd
     npm i cloudcmd
-
-Додаткові модулі
----------------
-**Серверна частина Cloud Commander** не використовує додаткові модулі для основного функціоналу.
-Але для мінімізації та оптимізації додатково можна 
-призначити (та встановити) модулі [Minify] (https://github.com/coderaiser/minify "Minify")
-та [socket.io] (https://github.com/LearnBoost/socket.io "Socket.IO").
-
-Щоб встановити додаткові модулі, напишіть знаходячись в папці **Cloud Commander**:
-
-    npm i
 
 Розширення
 ---------------
@@ -340,6 +372,7 @@ Cloud Commander може авторизовувати клієнтів чере�
 
 Історія версій
 ---------------
+- *2013.12.09*, **[v0.7.0](//github.com/coderaiser/cloudcmd-archive/raw/master/cloudcmd-v0.6.0.zip)**
 - *2013.11.08*, **[v0.6.0](//github.com/coderaiser/cloudcmd-archive/raw/master/cloudcmd-v0.6.0.zip)**
 - *2013.10.17*, **[v0.5.0](//github.com/coderaiser/cloudcmd-archive/raw/master/cloudcmd-v0.5.0.zip)**
 - *2013.11.08*, **[v0.6.0](//github.com/coderaiser/cloudcmd-archive/raw/master/cloudcmd-v0.6.0.zip)**
