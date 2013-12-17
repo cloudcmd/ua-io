@@ -396,6 +396,6 @@ MIT [ліцензія](http://cloudcmd.io/LICENSE "ліцензія").
 Щира подяка:
 ---------------
 - [Polietilena](http://polietilena.github.io/ "Polietilena") за [логотип](http://cloudcmd.io/img/logo/cloudcmd.png "логотип") так [favicon](http://cloudcmd.io/img/favicon/favicon.png "favicon");
-- [Elec-ua](https://github.com/elec-ua)
+- [TarZak](https://github.com/tarzak)
     - [російский](http://ru.cloudcmd.io "Cloud Commander російскою") та [український](http://ua.cloudcmd.io "Cloud Commander українською") переклади;
     - налаштування: [шаблон](html/config.html) та [стилі](css/config.css);
