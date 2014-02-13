@@ -2,9 +2,9 @@
 layout: default
 ---
 
-Cloud Commander 0.7.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][DependencyStatusIMGURL]][DependencyStatusURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL]
+Cloud Commander 0.8.1 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][DependencyStatusIMGURL]][DependencyStatusURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL]
 ===============
-###[Головна][MainURL] [Блог][BlogURL] Наживо(![IO][IO_LIVE_IMG] [IO][IOURL], ![JitSu][JitSu_LIVE_IMG] [JitSu][JitSuURL], ![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL] ![RunKite][RunKite_LIVE_IMG] [RunKite][RunKiteURL])
+###[Головна][MainURL] [Блог][BlogURL] Наживо(![IO][IO_LIVE_IMG] [IO][IOURL], ![JitSu][JitSu_LIVE_IMG] [JitSu][JitSuURL], ![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 [NPMIMGURL]:                https://badge.fury.io/js/cloudcmd.png
 [BuildStatusIMGURL]:        https://secure.travis-ci.org/coderaiser/cloudcmd.png?branch=master
 [DependencyStatusIMGURL]:   https://gemnasium.com/coderaiser/cloudcmd.png
@@ -21,12 +21,9 @@ Cloud Commander 0.7.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][
 [IOURL]:                    http://io.cloudcmd.io "IO"
 [JitSuURL]:                 http://cloudcmd.jit.su "JitSu"
 [HerokuURL]:                http://cloudcmd.herokuapp.com/ "Heroku"
-[RunKiteURL]:               http://cloudcmd.apps.runkite.com/ "RunKite"
-[RunKiteURL]:               http://cloudcmd.apps.runkite.com/ "RunKite"
-[IO_LIVE_IMG]:              https://status-ok.cloudcmd.io/host/io.cloudcmd.io/fs?json "IO"
-[JitSu_LIVE_IMG]:           https://status-ok.cloudcmd.io/host/cloudcmd.jit.su/fs?json "JitSu"
-[HEROKU_LIVE_IMG]:          https://status-ok.cloudcmd.io/host/cloudcmd.herokuapp.com/fs?json "Heroku"
-[RunKite_LIVE_IMG]:         https://status-ok.cloudcmd.io/host/cloudcmd.apps.runkite.com/fs?json "RunKite"
+[IO_LIVE_IMG]:              http://status-ok.cloudcmd.io/host/io.cloudcmd.io/fs?json "IO"
+[JitSu_LIVE_IMG]:           http://status-ok.cloudcmd.io/host/cloudcmd.jit.su/fs?json "JitSu"
+[HEROKU_LIVE_IMG]:          http://status-ok.cloudcmd.io/host/cloudcmd.herokuapp.com/fs?json "Heroku"
 
 **Cloud Commander** - хмарний файловий менеджер з консоллю та редактором.
 
@@ -55,14 +52,14 @@ Cloud Commander 0.7.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][
 і розпакувати або просто клонувати репозиторій з github:
 
 ```
-    git clone git://github.com/coderaiser/cloudcmd.git
-    cd cloudcmd
-    node cloudcmd
+git clone git://github.com/coderaiser/cloudcmd.git
+cd cloudcmd
+node cloudcmd
 ```
 або встановити в npm:
 ```
-    npm i cloudcmd -g
-    cloudcmd
+npm i cloudcmd -g
+cloudcmd
 ```
 
 Додаткові модулі
@@ -88,15 +85,20 @@ Cloud Commander 0.7.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][
 - **F5**                - копіювати
 - **F6**                - змінити назву/перемістити
 - **F7**                - нова папка
+- **F7** + **shift**    - новий файл
 - **F8, Delete**        - знищити обраний файл
 - **F9**                - меню
 - **F10**               - налаштування
+- **(*)**               - виділити/зняти виділення з усього
+- **(+)**               - розширити виділення
+- **(-)**               - звузити виділення
 - **Ctrl + r**          - оновити вміст папки
 - **Ctrl + d**          - очистити локальний кеш, що містить вміст папки
 - **Alt  + q**          - вимкнути прив'язку клавіш
 - **Alt  + s**          - відновити усі прив'язки клавіші
 - **Ctrl + a**          - виділити усі файли на панелі
 - **up, down, enter**   - пересування файловою систему
+- **Ctrl + \**          - перейти до кореневого каталогу
 - **Tab**               - переміщення між панелями
 - **Page Up**           - вгору на одну сторінку
 - **Page Down**         - вниз на одну сторінку 
@@ -106,6 +108,7 @@ Cloud Commander 0.7.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][
 - **Insert**            - обрати поточнний файл
 - **Shift + F10**       - контекстне меню
 - **~**                 - консоль
+- **Ctrl + Click**      - відкрити файл в новій вкладці
 
 Редактор
 ---------------
@@ -164,6 +167,9 @@ Cloud Commander 0.7.0 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][
 
 ```js
 {
+    "auth"              : false,    /* дозволити http авторизацію                                   */
+    "username"          : "root",   /* ім'я користувача для авторизації                             */
+    "password"          : "toor",   /* пароль хеш в sha-1 для авторизації                           */
     "apiURL "           :"/api/v1",
     "appCache"          : false,     /* кешувати файли для оффлайнового використання                */
     "analytics"         : true,      /* підтримка google analytics                                  */
@@ -213,7 +219,7 @@ git update-index --no-assume-unchanged json/config.json
 @:/tmp/cloudcmd (dev) $ sudo iptables -t nat -A PREROUTING -p tcp --dport 443 -j REDIRECT --to-ports 4430
 @:/tmp/cloudcmd (dev) $ sudo iptables -t nat -L # look reles after
 ```
-Ви маєте побачити щось таке ( **8000** and **4430** should be in config as **port** and **sslPort** )
+Ви маєте побачити щось таке ( **8000** та **4430** мають бути в config як **port** і **sslPort** )
 
     target     prot opt source               destination
     REDIRECT   tcp  --  anywhere             anywhere             tcp dpt:http redir ports 8000
@@ -289,16 +295,6 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
     
     nohup node cloudcmd
 
-Авторизація
----------------
-Cloud Commander може авторизовувати клієнтів через openID на GitHub.
-Все що для цього потрібно - додати **id** і **secret** додатків зі сторінки 
-налаштувань github в **config.json** (id just) and env varible (secret)
-з іменами: *github_id*, *github_secret*, *dropbox_key*, *dropbox_secret* і т.д.
-Для додаткової інформації, дивіться **config.json** та **shell/seret.bat** *(для win32)*
-або **shell/secret.sh** *(для nix)*.
-
-
 Запуск
 ---------------
 Для запуску **Cloud Commander** потрібна лише одна команда:
@@ -345,14 +341,18 @@ Cloud Commander може авторизовувати клієнтів чере�
 - [github]                  [githubURL]
 - [dropbox-js]              [dropbox-jsURL]
 - [jquery]                  [jqueryURL]
+- [socket.io]               [socketIOURL]
+- [http-auth]               [httpAuthURL]
 
-[AceURL]:                   //ace.ajax.org/ "Ace"
+[AceURL]:                   http://ace.ajax.org/ "Ace"
 [FancyBoxURL]:              //github.com/fancyapps/fancyBox "FancyBox"
 [jQuery-contextMenuURL]:    //github.com/medialize/jQuery-contextMenu "jQuery-contextMenu"
 [jq-consoleURL]:            //github.com/replit/jq-console "jq-console"
 [githubURL]:                //github.com/michael/github "github"
 [dropbox-jsURL]:            //github.com/dropbox/dropbox-js "dropbox-js"
 [jqueryURL]:                //jquery.com
+[socketIOURL]:              http://socket.io
+[httpAuthURL]:              //github.com/gevorg/http-auth
 
 Долучитися до проекту
 ---------------
@@ -372,6 +372,8 @@ Cloud Commander може авторизовувати клієнтів чере�
 
 Історія версій
 ---------------
+- *2014.02.13*, **[v0.8.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v0.8.1.zip)**
+- *2014.02.13*, **[v0.8.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v0.8.0.zip)**
 - *2013.12.09*, **[v0.7.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v0.7.0.zip)**
 - *2013.11.08*, **[v0.6.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v0.6.0.zip)**
 - *2013.10.17*, **[v0.5.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v0.5.0.zip)**
