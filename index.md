@@ -2,18 +2,20 @@
 layout: default
 ---
 
-Cloud Commander 0.8.1 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][DependencyStatusIMGURL]][DependencyStatusURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL]
+Cloud Commander 0.8.2 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][DependencyStatusIMGURL]][DependencyStatusURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL] [![License][LicenseIMGURL]][LicenseURL] [![Flattr][FlattrIMGURL]][FlattrURL]
 ===============
 ###[Головна][MainURL] [Блог][BlogURL] Наживо(![IO][IO_LIVE_IMG] [IO][IOURL], ![JitSu][JitSu_LIVE_IMG] [JitSu][JitSuURL], ![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
-[NPMIMGURL]:                https://badge.fury.io/js/cloudcmd.png
-[BuildStatusIMGURL]:        https://secure.travis-ci.org/coderaiser/cloudcmd.png?branch=master
+[NPMIMGURL]:                https://img.shields.io/npm/v/cloudcmd.svg
+[BuildStatusIMGURL]:        https://img.shields.io/travis/coderaiser/cloudcmd/dev.svg
 [DependencyStatusIMGURL]:   https://gemnasium.com/coderaiser/cloudcmd.png
-[FlattrIMGURL]:             http://api.flattr.com/button/flattr-badge-large.png
+[FlattrIMGURL]:             https://img.shields.io/badge/flattr-donate-317BF9.svg
+[LicenseIMGURL]:            https://img.shields.io/badge/license-MIT-317BF9.svg
 [NPM_INFO_IMG]:             https://nodei.co/npm/cloudcmd.png?downloads=true&&stars
 [NPMURL]:                   http://badge.fury.io/js/cloudcmd
-[BuildStatusURL]:           http://travis-ci.org/coderaiser/cloudcmd  "Build Status"
+[BuildStatusURL]:           https://travis-ci.org/coderaiser/cloudcmd  "Build Status"
 [DependencyStatusURL]:      https://gemnasium.com/coderaiser/cloudcmd "Dependency Status"
 [FlattrURL]:                https://flattr.com/submit/auto?user_id=coderaiser&url=github.com/coderaiser/cloudcmd&title=cloudcmd&language=&tags=github&category=software "flattr"
+[LicenseURL]:               https://tldrlegal.com/license/mit-license "MIT License"
 [NPM_INFO_URL]:             https://npmjs.org/package/cloudcmd "npm"
 [MainURL]:                  http://cloudcmd.io "Головна"
 [BlogURL]:                  http://blog.cloudcmd.io "Блог"
@@ -29,8 +31,6 @@ Cloud Commander 0.8.1 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][
 
 ![Cloud Commander](http://cloudcmd.io/img/logo/cloudcmd.png "Cloud Commander")
 
-[![Flattr][FlattrIMGURL]][FlattrURL]
-
 Переваги
 ---------------
 - Відкритий код.
@@ -42,41 +42,16 @@ Cloud Commander 0.8.1 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][
  
 Встановлення
 ---------------
-[![NPM_INFO][NPM_INFO_IMG]][NPM_INFO_URL]
 
-**Cloud Commander** встановлюється дуже просто.
-Все що вам потрібно: 
+**Cloud Commander** встановлюється дуже просто:
 
-- встановити [node.js](http://nodejs.org/ "node.js")
-- [завантажити](https://github.com/coderaiser/cloudcmd/archive/master.zip)
-і розпакувати або просто клонувати репозиторій з github:
+- встановити [node.js](http://nodejs.org/ "node.js").
+- встановити ```cloudcmd``` через npm за допомогою однієї простої команди.
 
-```
-git clone git://github.com/coderaiser/cloudcmd.git
-cd cloudcmd
-node cloudcmd
-```
-або встановити в npm:
-```
-npm i cloudcmd -g
-cloudcmd
-```
-
-Додаткові модулі
----------------
-**Серверна частина Cloud Commander** не використовує додаткові модулі для основного функціоналу.
-Але для роботи консолі, а також мінімізації, оптимізації додатково можна 
-призначити (та встановити) модулі [Minify] (https://github.com/coderaiser/minify "Minify")
-та [socket.io] (https://github.com/LearnBoost/socket.io "Socket.IO").
-
-Щоб встановити додаткові модулі, напишіть знаходячись в папці **Cloud Commander**:
-
-    npm i
+![NPM_INFO][NPM_INFO_IMG]
 
 Гарячі клавіші
 ---------------
-В усіх сучасних веб оглядачах (окрім Інтернет Експлорера, бо він особливий) гарячі клавіші працюють.
-Короткий список:
 
 - **F1**                - допомога
 - **F2**                - змінити назву обраного файлу
@@ -155,7 +130,7 @@ cloudcmd
 - Обрати все
 - Вивантажити до (Dropbox, Github, GDrive)
 - Завантажити
-- Новий (Файл, Папка, з хмарки)
+- Новий (Файл, Папка, з хмари)
  
 ###Гарячі клавіші
 - **F9**                - відкрити
@@ -329,10 +304,9 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
     npm r cloudcmd
     npm i cloudcmd
 
-Розширення
+Список додаткових модулів
 ---------------
-**Cloud Commander** створено з можливістю легкого розширення основного функціоналу.
-Щоб розширити функціонал Cloud Commander, використовуйте такі модулі:
+Щоб розширити функціонал файлового менеджера, використано такі модулі:
 
 - [Ace]                     [AceURL]
 - [FancyBox]                [FancyBoxURL]
@@ -343,6 +317,7 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 - [jquery]                  [jqueryURL]
 - [socket.io]               [socketIOURL]
 - [http-auth]               [httpAuthURL]
+- [fs-extra]                [fs-extraURL]
 
 [AceURL]:                   http://ace.ajax.org/ "Ace"
 [FancyBoxURL]:              //github.com/fancyapps/fancyBox "FancyBox"
@@ -353,6 +328,7 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 [jqueryURL]:                //jquery.com
 [socketIOURL]:              http://socket.io
 [httpAuthURL]:              //github.com/gevorg/http-auth
+[fs-extraURL]:              //github.com/jprichardson/node-fs-extra "fs-extra"
 
 Долучитися до проекту
 ---------------
@@ -372,6 +348,8 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 
 Історія версій
 ---------------
+- *2014.xx.xx*, **[v0.9.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v0.9.0.zip)**
+- *2014.03.03*, **[v0.8.2](//github.com/cloudcmd/archive/raw/master/cloudcmd-v0.8.2.zip)**
 - *2014.02.13*, **[v0.8.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v0.8.1.zip)**
 - *2014.02.13*, **[v0.8.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v0.8.0.zip)**
 - *2013.12.09*, **[v0.7.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v0.7.0.zip)**
@@ -390,10 +368,6 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 - *2012.07.14*, **[v0.1.2](//github.com/cloudcmd/archive/raw/master/cloudcmd-v0.1.2.zip)**
 - *2012.07.11*, **[v0.1.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v0.1.1.zip)**
 - *2012.07.09*, **[v0.1.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v0.1.0.zip)**
-
-Ліцензія
----------------
-MIT [ліцензія](http://cloudcmd.io/LICENSE "ліцензія").
 
 Щира подяка:
 ---------------
