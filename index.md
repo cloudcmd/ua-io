@@ -27,18 +27,21 @@ Cloud Commander 0.8.2 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][
 [JitSu_LIVE_IMG]:           http://status-ok.cloudcmd.io/host/cloudcmd.jit.su/fs?json "JitSu"
 [HEROKU_LIVE_IMG]:          http://status-ok.cloudcmd.io/host/cloudcmd.herokuapp.com/fs?json "Heroku"
 
-**Cloud Commander** - хмарний файловий менеджер з консоллю та редактором.
+**Cloud Commander** - хмарний файловий менеджер з консоллю та редактором. Допоможе вам: **створювати**, **редагувати**, **переносити** і **видаляти файли** та **папки** і все це у вашому улюбленому браузері на будь-якому комп'ютері. Файловий менеджер складається з двох частин: 
+- **клієнтської** (з простим приємним інтерфейсом)
+- **серверної** (розробленої на Node.js)
 
 ![Cloud Commander](http://cloudcmd.io/img/logo/cloudcmd.png "Cloud Commander")
 
 Переваги
 ---------------
-- Відкритий код.
+- Відкритий код (**MIT License**).
 - Має дві класичні панелі.
 - Працює під Windows, Linux та Mac OS.
 - Може використовуватись локально або віддалено.
 - Має гарну консоль та редактор.
 - Написаний на JavaScript/Node.js.
+- Працює в браузері.
  
 Встановлення
 ---------------
@@ -80,7 +83,8 @@ Cloud Commander 0.8.2 [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][
 - **Home**              - на початок списку 
 - **End**               - в кінець списку
 - **Shift + Delete**    - знищити підтвердження
-- **Insert**            - обрати поточнний файл
+- **Space**             - обрати поточнний файл (і показати розмір папки)
+- **Insert**            - обрати поточнний файл (і перейти до наступного)
 - **Shift + F10**       - контекстне меню
 - **~**                 - консоль
 - **Ctrl + Click**      - відкрити файл в новій вкладці
@@ -309,6 +313,7 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 Щоб розширити функціонал файлового менеджера, використано такі модулі:
 
 - [Ace]                     [AceURL]
+- [Minify]                  [MinifyURL]
 - [FancyBox]                [FancyBoxURL]
 - [jQuery-contextMenu]      [jQuery-contextMenuURL]
 - [jq-console]              [jq-consoleURL]
@@ -320,6 +325,7 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 - [fs-extra]                [fs-extraURL]
 
 [AceURL]:                   http://ace.ajax.org/ "Ace"
+[MinifyURL]:                http://coderaiser.github.io/minify "Minify"
 [FancyBoxURL]:              //github.com/fancyapps/fancyBox "FancyBox"
 [jQuery-contextMenuURL]:    //github.com/medialize/jQuery-contextMenu "jQuery-contextMenu"
 [jq-consoleURL]:            //github.com/replit/jq-console "jq-console"
