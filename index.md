@@ -2,24 +2,20 @@
 layout: default
 ---
 
-Cloud Commander 0.8.2
+Cloud Commander 0.8.3
 ===============
 ###[Головна][MainURL] [Блог][BlogURL] Наживо(![IO][IO_LIVE_IMG] [IO][IOURL], ![JitSu][JitSu_LIVE_IMG] [JitSu][JitSuURL], ![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
-[NPM_INFO_IMG]:             https://nodei.co/npm/cloudcmd.png?downloads=true&&stars
+[NPM_INFO_IMG]:             https://nodei.co/npm/cloudcmd.png?downloads=true&&stars "npm install cloudcmd"
 [MainURL]:                  http://cloudcmd.io "Головна"
 [BlogURL]:                  http://blog.cloudcmd.io "Блог"
-[DemoURL]:                  http://io.cloudcmd.io "Демо"
 [IOURL]:                    http://io.cloudcmd.io "IO"
 [JitSuURL]:                 http://cloudcmd.jit.su "JitSu"
 [HerokuURL]:                http://cloudcmd.herokuapp.com/ "Heroku"
-[IO_LIVE_IMG]:              http://status-ok.cloudcmd.io/host/io.cloudcmd.io/fs?json "IO"
-[JitSu_LIVE_IMG]:           http://status-ok.cloudcmd.io/host/cloudcmd.jit.su/fs?json "JitSu"
-[HEROKU_LIVE_IMG]:          http://status-ok.cloudcmd.io/host/cloudcmd.herokuapp.com/fs?json "Heroku"
+[IO_LIVE_IMG]:              https://status-ok.cloudcmd.io/host/io.cloudcmd.io/img/txt.png "IO"
+[JitSu_LIVE_IMG]:           https://status-ok.cloudcmd.io/host/cloudcmd.jit.su/img/txt.png "JitSu"
+[HEROKU_LIVE_IMG]:          https://status-ok.cloudcmd.io/host/cloudcmd.herokuapp.com/img/txt.png "Heroku"
 
-**Cloud Commander** - хмарний файловий менеджер з консоллю та редактором. Допоможе вам: **створювати**, **редагувати**, **переносити** і **видаляти файли** та **папки** і все це у вашому улюбленому браузері на будь-якому комп'ютері. Файловий менеджер складається з двох частин: 
-
-- **клієнтської** (з простим приємним інтерфейсом)
-- **серверної** (розробленої на Node.js)
+**Cloud Commander** - двопанельний веб файл менеджер з консоллю та редактором. Допоможе вам керувати сервером та працювати з файлами, папками і програмами в браузері на будь-якому комп'ютері, смартфоні або планшеті.
 
 ![Cloud Commander](http://cloudcmd.io/img/logo/cloudcmd.png "Cloud Commander")
 
@@ -27,11 +23,14 @@ Cloud Commander 0.8.2
 ---------------
 - Відкритий код (**MIT License**).
 - Має дві класичні панелі.
-- Працює під Windows, Linux та Mac OS.
+- Можливість **авторизація**.
+- Клієнт працює в веб браузері.
+- Сервер працює під **Windows, Linux та Mac OS**.
 - Може використовуватись локально або віддалено.
-- Має гарну консоль та редактор.
-- Написаний на JavaScript/Node.js.
-- Працює в браузері.
+- Підлаштовується під розмір екрану.
+- **Редактор** з підтримкою **підсвітки синтаксису** більш ніж для 110 мов.
+- **Консоль** з підтримкою стандартної командної строки ОС.
+- Написаний на **JavaScript/Node.js**.
  
 Встановлення
 ---------------
@@ -43,43 +42,58 @@ Cloud Commander 0.8.2
 
 ![NPM_INFO][NPM_INFO_IMG]
 
+Запуск
+---------------
+Для запуску **Cloud Commander** потрібна лише одна команда:
+    
+    node cloudcmd
+або на Windows
+
+    cloudcmd
+
+Після цього, Cloud Commander читає інформацію порта з файлу налаштувань [config.json](http://github.com/coderaiser/cloudcmd/blob/master/json/config.json#L17) і запускає сервер
+на цьому порті ( **8000**, за замовчуванням ),якщо змінних портів не існує( *cloud9*, *cloudfoundry* and *nodester* ).
+Тоді просто наберіть в броузері
+
+    http://127.0.0.1:8000
+
 Гарячі клавіші
 ---------------
 
-|Key                |Operation
-|:------------------|:--------------------------------------------
-| `F1`              | допомога
-| `F2`              | змінити назву обраного файлу
-| `F3`              | переглянути
-| `F4`              | редагувати
-| `F5`              | копіювати
-| `F6`              | змінити назву/перемістити
-| `F7`              | нова папка
-| `Shift + F7`      | новий файл
-| `F8, Delete`      | знищити обраний файл
-| `F9`              | меню
-| `F10`             | налаштування
-| `(*)`             | виділити/зняти виділення з усього
-| `(+)`             | розширити виділення
-| `(-)`             | звузити виділення
-| `Ctrl + r`        | оновити вміст папки
-| `Ctrl + d`        | очистити локальний кеш, що містить вміст папки
-| `Alt  + q`        | вимкнути прив'язку клавіш
-| `Alt  + s`        | відновити усі прив'язки клавіші
-| `Ctrl + a`        | виділити усі файли на панелі
-| `up, down, enter` | пересування файловою систему
-| `Ctrl + \`        | перейти до кореневого каталогу
-| `Tab`             | переміщення між панелями
-| `Page Up`         | вгору на одну сторінку
-| `Page Down`       | вниз на одну сторінку 
-| `Home`            | на початок списку 
-| `End`             | в кінець списку
-| `Shift + Delete`  | знищити підтвердження
-| `Space`           | обрати поточнний файл (і показати розмір папки)
-| `Insert`          | обрати поточнний файл (і перейти до наступного)
-| `Shift + F10`     | контекстне меню
-| `~`               | консоль
-| `Ctrl + Click`    | відкрити файл в новій вкладці
+|Key                    |Operation
+|:----------------------|:--------------------------------------------
+| `F1`                  | допомога
+| `F2`                  | змінити назву
+| `F3`                  | переглянути
+| `F4`                  | редагувати
+| `F5`                  | копіювати
+| `F6`                  | змінити назву/перемістити
+| `F7`                  | нова папка
+| `Shift + F7`          | новий файл
+| `Shift + Delete`      | знищити без підтвердження
+| `F8`, `Delete`        | знищити обраний файл
+| `F9`                  | меню
+| `F10`                 | налаштування
+| `(*)`                 | виділити/зняти виділення з усього
+| `(+)`                 | розширити виділення
+| `(-)`                 | звузити виділення
+| `Ctrl + r`            | оновити
+| `Ctrl + d`            | очистити локальний кеш, що містить вміст папки
+| `Alt  + q`            | вимкнути прив'язку клавіш
+| `Alt  + s`            | відновити усі прив'язки клавіші
+| `Ctrl + a`            | виділити усі файли на панелі
+| `up`, `down`, `enter` | пересування файловою систему
+| `Ctrl + \`            | перейти до кореневого каталогу
+| `Tab`                 | переміщення між панелями
+| `Page Up`             | вгору на одну сторінку
+| `Page Down`           | вниз на одну сторінку 
+| `Home`                | на початок списку 
+| `End`                 | в кінець списку
+| `Space`               | обрати поточнний файл (і отримати розмір папки)
+| `Insert`              | обрати поточнний файл (і перейти до наступного)
+| `Shift + F10`         | контекстне меню
+| `~`                   | консоль
+| `Ctrl + Click`        | відкрити файл в новій вкладці
 
 Редактор
 ---------------
@@ -185,23 +199,25 @@ git update-index --no-assume-unchanged json/config.json
 Просто запустіть [shell/addtables.sh](http://github.com/coderaiser/cloudcmd/blob/master/shell/addtables.sh) для стандартних опцій.
 
 ```sh
-@:/tmp/cloudcmd (dev) $ sudo iptables -t nat -L # look rules before
-@:/tmp/cloudcmd (dev) $ sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 8000
-@:/tmp/cloudcmd (dev) $ sudo iptables -t nat -A PREROUTING -p tcp --dport 443 -j REDIRECT --to-ports 4430
-@:/tmp/cloudcmd (dev) $ sudo iptables -t nat -L # look reles after
+# iptables -t nat -L # look rules before
+# iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 8000
+# iptables -t nat -A PREROUTING -p tcp --dport 443 -j REDIRECT --to-ports 4430
+# iptables -t nat -L # look rules after
 ```
-Ви маєте побачити щось таке ( **8000** та **4430** мають бути в config як **port** і **sslPort** )
 
-    target     prot opt source               destination
-    REDIRECT   tcp  --  anywhere             anywhere             tcp dpt:http redir ports 8000
-    REDIRECT   tcp  --  anywhere             anywhere             tcp dpt:https redir ports 4430
+Ви маєте побачити щось назразок ( **8000** та **4430** мають бути в config як **port** і **sslPort** )
+```
+target     prot opt source               destination
+REDIRECT   tcp  --  anywhere             anywhere             tcp dpt:http redir ports 8000
+REDIRECT   tcp  --  anywhere             anywhere             tcp dpt:https redir ports 4430
+```
 
 Якщо захочете все повернути, просто очистіть правила ( **1** та **2** це номера правил,
 у вашому випадку вони можуть відрізнятися).
 
 ```sh
-@:/tmp/cloudcmd (dev) $ sudo iptables -t nat -D PREROUTING 1
-@:/tmp/cloudcmd (dev) $ sudo iptables -t nat -D PREROUTING 2
+# iptables -t nat -D PREROUTING 2
+# iptables -t nat -D PREROUTING 1
 ```
 
 ###nginx
@@ -266,24 +282,6 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
     
     nohup node cloudcmd
 
-Запуск
----------------
-Для запуску **Cloud Commander** потрібна лише одна команда:
-    
-    node cloudcmd
-або на Windows
-
-    cloudcmd
-
-Після цього, Cloud Commander читає інформацію порта з файлу налаштувань [config.json](http://github.com/coderaiser/cloudcmd/blob/master/json/config.json#L17) і запускає сервер
-на цьому порті ( **8000**, за замовчуванням ),якщо змінних портів не існує( *cloud9*, *cloudfoundry* and *nodester* ).
-Тоді просто наберіть в броузері
-
-    http://127.0.0.1:8000
-або
-
-    http://localhost:8000
-    
 Оновлення
 ---------------
 **Cloud Commander** дуже часто оновлюється.
@@ -346,6 +344,7 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 
 Історія версій
 ---------------
+- *2014.03.19*, **[v0.8.3](//github.com/cloudcmd/archive/raw/master/cloudcmd-v0.8.3.zip)**
 - *2014.03.03*, **[v0.8.2](//github.com/cloudcmd/archive/raw/master/cloudcmd-v0.8.2.zip)**
 - *2014.02.13*, **[v0.8.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v0.8.1.zip)**
 - *2014.02.13*, **[v0.8.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v0.8.0.zip)**
