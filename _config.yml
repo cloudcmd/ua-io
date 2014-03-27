@@ -13,7 +13,7 @@ metrika         : 24212803
 ga              : UA-45093573-4
 canonical       : ua.cloudcmd.io
 repoName        : cloudcmd/ua/edit/master/last.md
-improveText     : "Знайшли помилку? Допоможіть її виправити."
+improveText     : Виправити помилку на сайті
 repoSource      : coderaiser/cloudcmd
 image           : http://cloudcmd.io/img/logo/cloudcmd.png
 favicon         : http://ua.cloudcmd.io/favicon.ico
