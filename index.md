@@ -1,20 +1,17 @@
 ---
 layout: default
 lang:
- - name: English
+ - name: Англійською
    link: http://cloudcmd.io
-   translation: Англійською
  
- - name: Ukrainian
+ - name: Українською
    link: http://ua.cloudcmd.io
-   translation: Українською
  
- - name: Russian
+ - name: Російською
    link: http://ru.cloudcmd.io
-   translation: Російською
 ---
 
-Cloud Commander 0.8.3
+Cloud Commander 0.8.4
 ===============
 ###[Головна][MainURL] [Блог][BlogURL] Наживо(![IO][IO_LIVE_IMG] [IO][IOURL], ![JitSu][JitSu_LIVE_IMG] [JitSu][JitSuURL], ![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 [NPM_INFO_IMG]:             https://nodei.co/npm/cloudcmd.png?downloads=true&&stars "npm install cloudcmd"
@@ -37,7 +34,7 @@ Cloud Commander 0.8.3
 - Має дві класичні панелі.
 - Можливість **авторизації**.
 - Клієнт працює в веб браузері.
-- Сервер працює під **Windows, Linux та Mac OS**.
+- Сервер працює під **Windows**, **Linux** та **Mac OS**.
 - Може використовуватись локально або віддалено.
 - Підлаштовується під розмір екрану.
 - **Редактор** з підтримкою **підсвітки синтаксису** більш ніж для 110 мов.
@@ -63,8 +60,7 @@ Cloud Commander 0.8.3
 
     cloudcmd
 
-Після цього, Cloud Commander читає інформацію порта з файлу налаштувань [config.json](http://github.com/coderaiser/cloudcmd/blob/master/json/config.json#L17) і запускає сервер
-на цьому порті ( **8000**, за замовчуванням ),якщо змінних портів не існує( *cloud9*, *cloudfoundry* and *nodester* ).
+Після цього, Cloud Commander читає інформацію порта з файлу налаштувань `json/config.json` і запускає сервер на стандартному порті (`8000`),якщо змінних портів не існує (`cloud9`, `cloudfoundry` and `nodester`).
 Тоді просто наберіть в броузері
 
     http://127.0.0.1:8000
@@ -72,7 +68,7 @@ Cloud Commander 0.8.3
 Гарячі клавіші
 ---------------
 
-|Key                    |Operation
+|Клавіша                |Дія
 |:----------------------|:--------------------------------------------
 | `F1`                  | допомога
 | `F2`                  | змінити назву
@@ -112,12 +108,16 @@ Cloud Commander 0.8.3
 [Демо](http://io.cloudcmd.io/fs/etc#/edit/passwd "Edit")
 ![Edit](http://cloudcmd.io/img/screen/edit.png "Edit")
 
-
 ###Гарячі клавіші
-- **F4**                - відкрити
-- **Ctrl + s**          - зберегти
-- **Esc**               - закрити
- 
+|Клавіша                |Дія
+|:----------------------|:--------------------------------------------
+| `F4`                  | відкрити
+| `Ctrl + s`            | зберегти
+| `Ctrl + f`            | пошук
+| `Ctrl + f + f`        | заміна
+| `Ctrl + g`            | перейти до строки
+| `Esc`                 | закрити
+
 Детальніше [Гарячі клавіші Ace](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts "Гарячі клавіші Ace").
 
 Консоль
@@ -126,8 +126,10 @@ Cloud Commander 0.8.3
 ![Консоль](http://cloudcmd.io/img/screen/console.png "Консоль")
 
 ###Гарячі клавіші
-- **~**                 - відкрити
-- **Esc**               - закрити
+|Клавіша                |Дія
+|:----------------------|:--------------------------------------------
+| `~`                   | відкрити
+| `Esc`                 | закрити
 
 Налаштування
 ---------------
@@ -135,8 +137,10 @@ Cloud Commander 0.8.3
 ![Налаштування](http://cloudcmd.io/img/screen/config.png "Налаштування")
 
 ###Гарячі клавіші
-- **F10**               - відкрити
-- **Esc**               - закрити
+|Клавіша                |Дія
+|:----------------------|:--------------------------------------------
+| `F10`                 | відкрити
+| `Esc`                 | закрити
 
 Меню
 ---------------
@@ -149,18 +153,21 @@ Cloud Commander 0.8.3
 - Змінити назву
 - Знищити
 - Zip файл
+- UnZip файл
 - Обрати все
 - Вивантажити до (Dropbox, Github, GDrive)
 - Завантажити
 - Новий (Файл, Папка, з хмари)
  
 ###Гарячі клавіші
-- **F9**                - відкрити
-- **Esc**               - закрити
+|Клавіша                |Дія
+|:----------------------|:--------------------------------------------
+| `F9`                  | відкрити
+| `Esc`                 | закрити
 
 Налаштування
 ---------------
-Всі головні налаштування можна встановити в config.json.
+Всі головні налаштування можна встановити в `json/config.json`.
 
 ```js
 {
@@ -171,6 +178,7 @@ Cloud Commander 0.8.3
     "appCache"          : false,     /* кешувати файли для оффлайнового використання                */
     "analytics"         : true,      /* підтримка google analytics                                  */
     "diff"              : false,     /* при збереженні - відсилає патч, а не повний файл            */
+    "zip"               : false,     /* zip текст пере посиланням / unzip перед збереженням         */
     "notifications"     : false,     /* показувати сповіщення, коли вкладка не активна              */
     "localStorage"      : true,      /* кешування вмісту папки                                      */
     "minify"            : true,      /* мініфікація js,css,html та зображень                        */
@@ -208,13 +216,13 @@ git update-index --no-assume-unchanged json/config.json
 Існує декілька простих і швидких шляхів. Один з них - просування портів через iptables.
 
 ###Iptables
-Просто запустіть [shell/addtables.sh](http://github.com/coderaiser/cloudcmd/blob/master/shell/addtables.sh) для стандартних опцій.
+Просто запустіть `shell/addtables.sh` для стандартних опцій.
 
 ```sh
-# iptables -t nat -L # look rules before
-# iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 8000
-# iptables -t nat -A PREROUTING -p tcp --dport 443 -j REDIRECT --to-ports 4430
-# iptables -t nat -L # look rules after
+iptables -t nat -L # look rules before
+iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 8000
+iptables -t nat -A PREROUTING -p tcp --dport 443 -j REDIRECT --to-ports 4430
+iptables -t nat -L # look rules after
 ```
 
 Ви маєте побачити щось назразок ( **8000** та **4430** мають бути в config як **port** і **sslPort** )
@@ -228,8 +236,8 @@ REDIRECT   tcp  --  anywhere             anywhere             tcp dpt:https redi
 у вашому випадку вони можуть відрізнятися).
 
 ```sh
-# iptables -t nat -D PREROUTING 2
-# iptables -t nat -D PREROUTING 1
+iptables -t nat -D PREROUTING 2
+iptables -t nat -D PREROUTING 1
 ```
 
 ###nginx
@@ -312,7 +320,7 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 
 Список додаткових модулів
 ---------------
-Щоб розширити функціонал файлового менеджера, використано такі модулі:
+Щоб розширити функціонал файлового менеджера, використовуются такі модулі:
 
 - [Ace]                     [AceURL]
 - [Minify]                  [MinifyURL]
@@ -356,6 +364,7 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 
 Історія версій
 ---------------
+- *2014.04.28*, **[v0.8.4](//github.com/cloudcmd/archive/raw/master/cloudcmd-v0.8.4.zip)**
 - *2014.03.19*, **[v0.8.3](//github.com/cloudcmd/archive/raw/master/cloudcmd-v0.8.3.zip)**
 - *2014.03.03*, **[v0.8.2](//github.com/cloudcmd/archive/raw/master/cloudcmd-v0.8.2.zip)**
 - *2014.02.13*, **[v0.8.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v0.8.1.zip)**
@@ -379,7 +388,7 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 
 Щира подяка:
 ---------------
-- [Polietilena](http://polietilena.github.io/ "Polietilena") за [логотип](http://cloudcmd.io/img/logo/cloudcmd.png "логотип") так [favicon](http://cloudcmd.io/img/favicon/favicon.png "favicon");
+- [Polietilena](http://polietilena.github.io/ "Polietilena") за **logo** and **favicon**.
 - [TarZak](https://github.com/tarzak)
-    - [російский](http://ru.cloudcmd.io "Cloud Commander російскою") та [український](http://ua.cloudcmd.io "Cloud Commander українською") переклади;
+    - Російський та український переклади;
     - налаштування: [шаблон](html/config.html) та [стилі](css/config.css);
