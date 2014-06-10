@@ -106,7 +106,6 @@ Cloud Commander 0.9.0
 
 Редактор
 ---------------
-[Демо](http://io.cloudcmd.io/fs/etc#/edit/passwd "Edit")
 ![Edit](http://cloudcmd.io/img/screen/edit.png "Edit")
 
 ###Гарячі клавіші
@@ -123,7 +122,6 @@ Cloud Commander 0.9.0
 
 Консоль
 ---------------
-[Демо](http://io.cloudcmd.io#/console "Консоль")
 ![Консоль](http://cloudcmd.io/img/screen/console.png "Консоль")
 
 ###Гарячі клавіші
@@ -134,7 +132,6 @@ Cloud Commander 0.9.0
 
 Налаштування
 ---------------
-[Демо](http://io.cloudcmd.io#/config "Налаштування")
 ![Налаштування](http://cloudcmd.io/img/screen/config.png "Налаштування")
 
 ###Гарячі клавіші
@@ -145,7 +142,6 @@ Cloud Commander 0.9.0
 
 Меню
 ---------------
-[Демо](http://io.cloudcmd.io#/menu "Меню")
 ![Menu](http://cloudcmd.io/img/screen/menu.png "Меню")
 Натискання на праву клавішу мишки, викликає меню з наступними пунктами:
 
