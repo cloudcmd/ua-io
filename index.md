@@ -61,8 +61,8 @@ Cloud Commander 0.9.1
 
     cloudcmd
 
-Після цього, Cloud Commander читає інформацію порта з файлу налаштувань `json/config.json` і запускає сервер на стандартному порті (`8000`),якщо змінних портів не існує (`cloud9`, `cloudfoundry` and `nodester`).
-Тоді просто наберіть в броузері
+Cloud Commander читає інформацію порта з файлу налаштувань `json/config.json` і запускає сервер на стандартному порті (`8000`),якщо змінних портів не існує (`cloud9`, `cloudfoundry` and `nodester`).
+Для початку роботи, просто наберіть в броузері
 
     http://127.0.0.1:8000
 
@@ -74,6 +74,7 @@ Cloud Commander 0.9.1
 | `F1`                  | допомога
 | `F2`                  | змінити назву
 | `F3`                  | переглянути
+| `Shift` + `F3`        | перегляд в `markdown`
 | `F4`                  | редагувати
 | `F5`                  | копіювати
 | `F6`                  | змінити назву/перемістити
@@ -171,7 +172,6 @@ Cloud Commander 0.9.1
     "auth"              : false,    /* дозволити http авторизацію                                   */
     "username"          : "root",   /* ім'я користувача для авторизації                             */
     "password"          : "toor",   /* пароль хеш в sha-1 для авторизації                           */
-    "apiURL "           :"/api/v1",
     "appCache"          : false,     /* кешувати файли для оффлайнового використання                */
     "analytics"         : true,      /* підтримка google analytics                                  */
     "diff"              : false,     /* при збереженні - відсилає патч, а не повний файл            */
@@ -320,6 +320,7 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 Щоб розширити функціонал файлового менеджера, використовуются такі модулі:
 
 - [Ace]                     [AceURL]
+- [Diff-Match-Patch]        [Diff-Match-PatchURL]
 - [Minify]                  [MinifyURL]
 - [FancyBox]                [FancyBoxURL]
 - [jQuery-contextMenu]      [jQuery-contextMenuURL]
@@ -329,9 +330,11 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 - [jquery]                  [jqueryURL]
 - [socket.io]               [socketIOURL]
 - [http-auth]               [httpAuthURL]
-- [fs-extra]                [fs-extraURL]
+- [rimraf]                  [rimrafURL]
+- [mkdirp]                  [mkdirpURL]
 
 [AceURL]:                   http://ace.ajax.org/ "Ace"
+[Diff-Match-PatchURL]:      https://code.google.com/p/google-diff-match-patch/ "Diff-Match-Patch"
 [MinifyURL]:                http://coderaiser.github.io/minify "Minify"
 [FancyBoxURL]:              //github.com/fancyapps/fancyBox "FancyBox"
 [jQuery-contextMenuURL]:    //github.com/medialize/jQuery-contextMenu "jQuery-contextMenu"
@@ -341,7 +344,8 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 [jqueryURL]:                //jquery.com
 [socketIOURL]:              http://socket.io
 [httpAuthURL]:              //github.com/gevorg/http-auth
-[fs-extraURL]:              //github.com/jprichardson/node-fs-extra "fs-extra"
+[rimrafURL]:                //github.com/isaacs/rimraf "rimraf"
+[mkdirpURL]:                //github.com/substack/node-mkdirp
 
 Долучитися до проекту
 ---------------
@@ -349,7 +353,7 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 Отримання dev версії **Cloud Commander**:
 
     git clone git://github.com/coderaiser/cloudcmd.git
-    git checkout dev
+    cd cloudcmd && git checkout dev
 
 Можливо вам знадобиться dev версія Minify,
 щоб отримати її, вам потрібно ввести декілька команд:
