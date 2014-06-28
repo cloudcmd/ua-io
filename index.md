@@ -57,7 +57,8 @@ Cloud Commander 0.9.2
 Для запуску **Cloud Commander** потрібна лише одна команда:
     
     node cloudcmd
-або на Windows
+
+або на при глобальному встановленні
 
     cloudcmd
 
