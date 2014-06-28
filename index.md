@@ -223,6 +223,7 @@ iptables -t nat -L # look rules after
 ```
 
 Ви маєте побачити щось назразок ( **8000** та **4430** мають бути в config як **port** і **sslPort** )
+
 ```
 target     prot opt source               destination
 REDIRECT   tcp  --  anywhere             anywhere             tcp dpt:http redir ports 8000
