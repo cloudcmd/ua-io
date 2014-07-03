@@ -14,7 +14,7 @@ lang:
    translation: Російською
 ---
 
-Cloud Commander 0.9.2
+Cloud Commander 1.0.0
 ===============
 ###[Головна][MainURL] [Блог][BlogURL] Наживо(![JitSu][JitSu_LIVE_IMG] [JitSu][JitSuURL], ![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 [NPM_INFO_IMG]:             https://nodei.co/npm/cloudcmd.png?downloads=true&&stars "npm install cloudcmd"
@@ -130,6 +130,7 @@ Cloud Commander читає інформацію порта з файлу нал�
 |Клавіша                |Дія
 |:----------------------|:--------------------------------------------
 | `~`                   | відкрити
+| `Ctrl` + `P`          | вставити шлях поточної папки
 | `Esc`                 | закрити
 
 Налаштування
@@ -367,6 +368,7 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 
 Історія версій
 ---------------
+- *2014.07.03*, **[v1.0.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v1.0.0.zip)**
 - *2014.06.16*, **[v0.9.2](//github.com/cloudcmd/archive/raw/master/cloudcmd-v0.9.2.zip)**
 - *2014.06.11*, **[v0.9.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v0.9.1.zip)**
 - *2014.06.10*, **[v0.9.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v0.9.0.zip)**
