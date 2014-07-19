@@ -3,235 +3,223 @@ layout: default
 lang:
  - name: English
    link: http://cloudcmd.io
-   translation: на Английском
+   translation: Англійською
  
  - name: Ukrainian
    link: http://ua.cloudcmd.io
-   translation: на Украинском
+   translation: Українською
  
  - name: Russian
    link: http://ru.cloudcmd.io
-   translation: на Русском
+   translation: Російською
 ---
 
 Cloud Commander 1.1.1
 ===============
-###[Главная][MainURL] [Блог][BlogURL] Демо(![JitSu][JitSu_LIVE_IMG] [JitSu][JitSuURL], ![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
-[NPM_INFO_IMG]:             https://camo.githubusercontent.com/254a020afe689842501ef5a79c04ba909f9b29d2/68747470733a2f2f6e6f6465692e636f2f6e706d2f636c6f7564636d642e706e673f646f776e6c6f6164733d7472756526267374617273 "npm install cloudcmd"
-[MainURL]:                  http://cloudcmd.io "Главная"
+###[Головна][MainURL] [Блог][BlogURL] Наживо(![JitSu][JitSu_LIVE_IMG] [JitSu][JitSuURL], ![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
+[NPM_INFO_IMG]:             https://nodei.co/npm/cloudcmd.png?downloads=true&&stars "npm install cloudcmd"
+[MainURL]:                  http://cloudcmd.io "Головна"
 [BlogURL]:                  http://blog.cloudcmd.io "Блог"
 [JitSuURL]:                 http://cloudcmd.jit.su "JitSu"
 [HerokuURL]:                http://cloudcmd.herokuapp.com/ "Heroku"
 [JitSu_LIVE_IMG]:           https://status-ok.cloudcmd.io/host/cloudcmd.jit.su/img/txt.png "JitSu"
 [HEROKU_LIVE_IMG]:          https://status-ok.cloudcmd.io/host/cloudcmd.herokuapp.com/img/txt.png "Heroku"
 
-**Cloud Commander** - двухпанельный веб файл менеджер с консолью и редактором. Поможет вам управлять сервером и работать с файлами, папками и программами в браузере на любом компьютере, смартфоне или планшете.
+**Cloud Commander** - двопанельний веб файл менеджер з консоллю та редактором. Допоможе вам керувати сервером та працювати з файлами, папками і програмами в браузері на будь-якому комп'ютері, смартфоні або планшеті.
 
 ![Cloud Commander](http://cloudcmd.io/img/logo/cloudcmd.png "Cloud Commander")
 
-Преимущества
+Переваги
 ---------------
-- Открытый код (**MIT License**).
-- Две классические панели.
-- Возможность **авторизации**.
-- Клиент работает в веб браузере.
-- Сервер работает под **Windows**, **Linux** и **Mac OS**.
-- Может использоваться локально или удаленно.
-- Адаптируется под размер экрана.
-- **Редактор** с поддержкой **подсветки синтаксиса** для более чем 110 языков.
-- **Консоль** с поддержкой стандартной командной строки ОС.
-- Написан на **JavaScript/Node.js**.
-
-Установка
+- Відкритий код (**MIT License**).
+- Має дві класичні панелі.
+- Можливість **авторизації**.
+- Клієнт працює в веб браузері.
+- Сервер працює під **Windows**, **Linux** та **Mac OS**.
+- Може використовуватись локально або віддалено.
+- Підлаштовується під розмір екрану.
+- **Редактор** з підтримкою **підсвітки синтаксису** більш ніж для 110 мов.
+- **Консоль** з підтримкою стандартної командної строки ОС.
+- Написаний на **JavaScript/Node.js**.
+ 
+Встановлення
 ---------------
 
-Установить **Cloud Commander** проще простого.
+**Cloud Commander** встановлюється дуже просто:
 
-- установить [node.js](//nodejs.org/ "node.js").
+- встановити [node.js](http://nodejs.org/ "node.js").
+- встановити ```cloudcmd``` через npm за допомогою однієї простої команди.
 
-- установить ```cloudcmd``` при помощи npm:
-
-
-    npm install cloudcmd #local install
-    
-или
-
-    npm install cloudcmd -g #global install
-    
-    
 ![NPM_INFO][NPM_INFO_IMG]
 
 Запуск
 ---------------
-Что бы запустить **Cloud Commander**, измените директорию на `node_modules/cloudcmd` и
-используйте команду:
+Для запуску **Cloud Commander** потрібна лише одна команда:
+    
+    node cloudcmd
 
-    node bin/cloudcmd
-
-или при установке с флагом `-g`, просто введите в любой папке:
+або, при глобальному встановленні:
 
     cloudcmd
 
-Cloud Commander считывает информацию из файла настроек `json/config.json` и запускает сервер
-на стандартном порту (`8000`), если не находит переменные окружения с именами `cloud9`, `cloudfoundry` и `nodester`.
-
-Для начала работы просто наберите в адресной строке браузера
+Cloud Commander читає інформацію порта з файлу налаштувань `json/config.json` і запускає сервер на стандартному порту (`8000`), якщо змінних оточнення з іменами `cloud9`, `cloudfoundry` та `nodester` не існує.
+Для початку роботи просто наберіть в броузері
 
     http://127.0.0.1:8000
-
-Обновление
+    
+Оновлення
 ---------------
-**Cloud Commander** обновляется часто.
+**Cloud Commander** оновлюється часто.
 
-Обновление происходит автоматически, так же это можно сделать в ручную.
-Если Вы клонировали репозиторий, Вы можете получить последние изменения командой:
+Оновлення проходить автоматично, але можна також виконувати вручну.
+Якщо Ви клонували репозиторій, Ви можете отримати останні зміни командою:
 
    git pull
 
-Если Вы установили Cloud Commander при помощи `npm`, просто переустановите его:
+Якщо ви встановили Cloud Commander за допомогою `npm`, просто перевстановіть його:
 
    npm i cloudcmd -g
 
-После чего нужно очистить кэш браузера, перезапустить Cloud Commander и обновить страницу.
+Після цього почистіть кеш вашого браузеру, перезапустіть Cloud Commander та оновіть сторінку.
 
-Горячие клавиши
+Гарячі клавіші
 ---------------
 
-|Клавиша                |Действие
+|Клавіша                |Дія
 |:----------------------|:--------------------------------------------
-| `F1`                  | помощь
-| `F2`                  | переименовать
-| `F3`                  | просмотр
-| `Shift + F3`          | просмотр в `markdown`
-| `F4`                  | редактировать
-| `F5`                  | копировать
-| `F6`                  | переименовать/переместить
-| `F7`                  | новая папка
-| `Shift + F7`          | новый файл
-| `F8`, `Delete`        | удалить текущий файл
-| `Shift + Delete`      | удалить без запроса о подтверждении
+| `F1`                  | допомога
+| `F2`                  | змінити назву
+| `F3`                  | переглянути
+| `Shift + F3`          | перегляд в `markdown`
+| `F4`                  | редагувати
+| `F5`                  | копіювати
+| `F6`                  | змінити назву/перемістити
+| `F7`                  | нова папка
+| `Shift + F7`          | новий файл
+| `Shift + Delete`      | знищити без підтвердження
+| `F8`, `Delete`        | знищити обраний файл
 | `F9`                  | меню
-| `F10`                 | настройки
-| `(*)`                 | виделить/снять выделение со всех файлов
-| `(+)`                 | расширить выделение
-| `(-)`                 | сузить выделение
-| `Ctrl + r`            | обновить
-| `Ctrl + d`            | очистить локальное хранилище
-| `Alt  + q`            | отключить привязку клавиш
-| `Alt  + s`            | вернуть все привязки клавиш
-| `Ctrl + A`            | выбрать (выделить) все файлы на панели
-| `Up`, `Down`, `Enter` | перемещение по файловой системе
-| `Ctrl + \`            | перейти в корневую папку
-| `Tab`                 | переключение между панелями
-| `Page Up`             | вверх на одну страницу
-| `Page Down`           | вниз на одну страницу
-| `Home`                | в начало списка
-| `End`                 | в конец списка
-| `Space`               | выделить текущий файл (и получить размер папки)
-| `Insert`              | выделить текущий файл (и перейти к следующему)
-| `Shift + F10`         | контекстное меню
+| `F10`                 | налаштування
+| `(*)`                 | виділити/зняти виділення з усього
+| `(+)`                 | розширити виділення
+| `(-)`                 | звузити виділення
+| `Ctrl + r`            | оновити
+| `Ctrl + d`            | очистити локальний кеш, що містить вміст папки
+| `Alt  + q`            | вимкнути прив'язку клавіш
+| `Alt  + s`            | відновити усі прив'язки клавіші
+| `Ctrl + a`            | виділити усі файли на панелі
+| `Up`, `Down`, `Enter` | пересування файловою систему
+| `Ctrl + \`            | перейти до кореневого каталогу
+| `Tab`                 | переміщення між панелями
+| `Page Up`             | вгору на одну сторінку
+| `Page Down`           | вниз на одну сторінку 
+| `Home`                | на початок списку 
+| `End`                 | в кінець списку
+| `Space`               | обрати поточнний файл (і отримати розмір папки)
+| `Insert`              | обрати поточнний файл (і перейти до наступного)
+| `Shift + F10`         | контекстне меню
 | `~`                   | консоль
-| `Ctrl + Click`        | открыть файл в новой вкладке
+| `Ctrl + Click`        | відкрити файл в новій вкладці
 
 Редактор
 ---------------
 ![Edit](http://cloudcmd.io/img/screen/edit.png "Edit")
 
-
-###Горячие клавиши
-|Клавиша                |Действие
+###Гарячі клавіші
+|Клавіша                |Дія
 |:----------------------|:--------------------------------------------
-| `F4`                  | открыть
-| `Ctrl + s`            | сохранить
-| `Ctrl + f`            | поиск
-| `Ctrl + f + f`        | замена
-| `Ctrl + g`            | перейти к строке
-| `Esc`                 | закрыть
- 
-Подробнее [Горячие клавиши Ace](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts "Горячие клавиши Ace").
+| `F4`                  | відкрити
+| `Ctrl + s`            | зберегти
+| `Ctrl + f`            | пошук
+| `Ctrl + f + f`        | заміна
+| `Ctrl + g`            | перейти до строки
+| `Esc`                 | закрити
+
+Детальніше [Гарячі клавіші Ace](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts "Гарячі клавіші Ace").
 
 Консоль
 ---------------
 ![Консоль](http://cloudcmd.io/img/screen/console.png "Консоль")
 
-###Горячие клавиши
-|Клавиша                |Действие
+###Гарячі клавіші
+|Клавіша                |Дія
 |:----------------------|:--------------------------------------------
-| `~`                   | открыть
-| `Ctrl + p`            | вставить путь текущей папки
-| `Ctrl + z`            | отменить текущую строку
-| `Ctrl + l`            | очистить
-| `Esc`                 | закрыть
+| `~`                   | відкрити
+| `Ctrl + p`            | вставити шлях поточної папки
+| `Ctrl + z`            | скасувати поточний рядок
+| `Ctrl + l`            | очистити
+| `Esc`                 | закрити
 
-Настройки
+Налаштування
 ---------------
-![Настройки](http://cloudcmd.io/img/screen/config.png "Настройки")
+![Налаштування](http://cloudcmd.io/img/screen/config.png "Налаштування")
 
-###Горячие клавиши
-|Клавиша                |Действие
+###Гарячі клавіші
+|Клавіша                |Дія
 |:----------------------|:--------------------------------------------
-| `F10`                 | открыть
-| `Esc`                 | закрыть
+| `F10`                 | відкрити
+| `Esc`                 | закрити
 
 Меню
 ---------------
 ![Menu](http://cloudcmd.io/img/screen/menu.png "Меню")
-Щелчок правой кнопкой мыши вызывает контекстное меню с такими пунктами:
+Натискання на праву клавішу мишки, викликає меню з наступними пунктами:
 
-- Просмотр
-- Правка
-- Переименовать
-- Удалить
+- Перегляд
+- Редагування
+- Змінити назву
+- Знищити
 - Zip файл
 - UnZip файл
-- Выделить всё
-- Выгрузить в (Dropbox, Github, GDrive)
-- Загрузить
-- Новый (Файл, Папка, с облака)
+- Обрати все
+- Вивантажити до (Dropbox, Github, GDrive)
+- Завантажити
+- Новий (Файл, Папка, з хмари)
  
-###Горячие клавиши
-|Клавиша                |Действие
+###Гарячі клавіші
+|Клавіша                |Дія
 |:----------------------|:--------------------------------------------
-| `F9`                  | открыть
-| `Esc`                 | закрыть
+| `F9`                  | відкрити
+| `Esc`                 | закрити
 
-Настройки
+Налаштування
 ---------------
-Все основные настройки, можно осуществлять в `json/config.json`.
+Всі головні налаштування можна встановити в `json/config.json`.
 
 ```js
 {
-    "auth"              : false,            /* разрешить http авторизацию                                      */
-    "username"          : "root",           /* имя пользователя для авторизации                                */
-    "password"          : "toor",           /* хеш пароля в sha-1 для авторизации                              */
-    "appCache"          : false,            /* кешировать файлы для оффлайн использования                      */
-    "analytics"         : true,             /* поддержка google analytics                                      */
-    "diff"              : false,            /* при сохранении - отсылает патч, а не весь файл                  */
-    "zip"               : false,            /* zip текст перед отсылкой / unzip перед сохранением              */
-    "notifications"     : false,            /* показывать оповещения, если вкладка не активна                  */
-    "localStorage"      : true,             /* кеширование содержимого папки                                   */
-    "minify"            : true,             /* минификация js, css, html и изображений                         */
-    "cache"             : true,             /* кеширование                                                     */
-    "online"            : true,             /* загрузить файлы js из cdn или Local path                        */
-    "logs"              : false,            /* выводить в логи или в консоль                                   */
-    "showKeysPanel"     : true,             /* показать классическую панель с кнопками функциональных клавиш   */
-    "server"            : true,             /* режим сервера или тестирования                                  */
-    "socket"            : true,             /* включить web сокеты                                             */
-    "port"              : 8000,             /* http порт                                                       */
-    "sslPort"           : 443,              /* https порт                                                      */
-    "ip"                : null,             /* ip или null(по умолчанию)                                       */
-    "ssl"               : false            /* использовать https?                                             */
+    "auth"              : false,     /* дозволити http авторизацію                                  */
+    "username"          : "root",    /* ім'я користувача для авторизації                            */
+    "password"          : "toor",    /* хеш пароль в sha-1 для авторизації                          */
+    "appCache"          : false,     /* кешувати файли для оффлайнового використання                */
+    "analytics"         : true,      /* підтримка google analytics                                  */
+    "diff"              : false,     /* при збереженні - відсилає патч, а не повний файл            */
+    "zip"               : false,     /* zip текст пере посиланням / unzip перед збереженням         */
+    "notifications"     : false,     /* показувати сповіщення, коли вкладка не активна              */
+    "localStorage"      : true,      /* кешування вмісту папки                                      */
+    "minify"            : true,      /* мініфікація js, css, html та зображень                      */
+    "cache"             : true,      /* додати контроль кешу                                        */
+    "online"            : true,      /* загрузити файли js з cdn або Local path                     */
+    "logs"              : false,     /* виводити в логи чи в консоль                                */
+    "showKeysPanel"     : true,      /* показати класичну панель з кнопками функціональних клавіш   */
+    "server"            : true,      /* режим сервера чи тестування                                 */
+    "socket"            : true       /* увімкнути web сокети                                        */
+    "port"              : 8000,      /* http порт                                                   */
+    "sslPort"           : 443,       /* https порт                                                  */
+    "ip"                : null,      /* ip чи null(за замовчуванням)                                */
+    "ssl"               : false      /* використовувати https?                                      */
+    "rest"              : true       /* увімкнути решту інтерфейса                                  */
 }
 ```
 
-Если вы изменили **config** и хотите продолжать обновляться при помощи git,
-Вам нужно применить следующую команду в корневой директории **Cloud Commander**:
+Якщо ви змінили **config** і хочете продовжувати оновлюватись за допомогою git,
+вам потрібно виконати наступну команду в кореневій директорії **Cloud Commander**:
 
 ```
 git update-index --assume-unchanged json/config.json
 ```
 
-Что бы вернуться к отслеживанию:
+Щоб повернутися до відстежування:
 
 ```
 git update-index --no-assume-unchanged json/config.json
@@ -239,44 +227,45 @@ git update-index --no-assume-unchanged json/config.json
 
 Сервер
 ---------------
-Обычно процессы, запущенные с правами отличными от root, не могут слушать порты с номером меньше, чем 1024.
-В любом случае, я советую Вам запускать Cloud Commander не под root. Как это сделать?
-Существует несколько простых и быстрых вариантов. Один из них - перенаправление портов через iptables.
+Зазвичай процеси, що запущено правами не root не можуть прослуховувати порти нижче ніж 1024.
+В любому випадку, я раджу Вам запускати Cloud Commander не під рутом. Як це зробити?!
+Існує декілька простих і швидких шляхів. Один з них - просування портів через iptables.
 
 ###Iptables
-Просто запустите `shell/addtables.sh` для стандартных опций.
+Просто запустіть `shell/addtables.sh` для стандартних опцій.
 
 ```sh
 iptables -t nat -L # look rules before
 iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 8000
 iptables -t nat -A PREROUTING -p tcp --dport 443 -j REDIRECT --to-ports 4430
-iptables -t nat -L # look reles after
+iptables -t nat -L # look rules after
 ```
 
-Вы должны увидеть что-то вроде ( **8000** и **4430** должно быть в config как **port** и **sslPort** )
+Ви маєте побачити щось назразок ( **8000** та **4430** мають бути в config як **port** і **sslPort** )
 
 ```
 target     prot opt source               destination
 REDIRECT   tcp  --  anywhere             anywhere             tcp dpt:http redir ports 8000
 REDIRECT   tcp  --  anywhere             anywhere             tcp dpt:https redir ports 4430
 ```
-Если захотите всё вернуть, просто очистите правила ( **1** и **2** — это номера правил,
-в вашем случае они могут отличаться).
+
+Якщо захочете все повернути, просто очистіть правила ( **1** та **2** це номера правил,
+у вашому випадку вони можуть відрізнятися).
 
 ```sh
-iptables -t nat -D PREROUTING 1
 iptables -t nat -D PREROUTING 2
+iptables -t nat -D PREROUTING 1
 ```
 
 ###nginx
-Возьмите [nginx](http://nginx.org/ "nginx"). В Linux это можно сделать так:
+Візьміть [nginx](http://nginx.org/ "nginx"). В Linux це можна зробити наступним чином:
 
 ```sh
 sudo apt-get install nginx #for ubuntu and debian
 ```
 
-И сделайте хост файл **/etc/nginx/sites-enabled/io.cloudcmd.io**
-( *io.cloudcmd.io* ваше доменное имя) с содержимым:
+І зробіть хост файл **/etc/nginx/sites-enabled/io.cloudcmd.io**
+( *io.cloudcmd.io* ваше доменне ім'я) з вмістом:
 
 ```sh
 server {
@@ -290,7 +279,7 @@ server {
 }
 ```
 
-Если вы хотите включить **ssl**, добавьте несколько строчек в раздел сервера:
+Якщо ви бажаєте додати **ssl**, додайте декілька рядків в розділ серверу:
 
 ```sh
 server {
@@ -307,7 +296,7 @@ server {
 }
 ```
 
-Если Вам нужно перенаправление с **http** на **https**, просто сделайте так:
+Якщо вам потрібне перенаправлення з **http** до **https**, просто зробіть так:
 
 ```sh
 server {
@@ -325,14 +314,14 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 /etc/init.d/nginx restart
 ```
 
-Для запуска Cloud Commander в качестве демона в Linux установите **log** в **true** в config-файлe и
-введите:
+Для запуску Cloud Commander в якості daemon в Linux встановіть **log** в "істину" в config-файлі і
+зробіть щось на зразок:
     
     nohup node cloudcmd
 
-Список дополнительных модулей
+Список додаткових модулів
 ---------------
-Для расширения функционала файлового менеджера используются следующие модули:
+Щоб розширити функціонал файлового менеджера, використовуются такі модулі:
 
 - [Ace]                     [AceURL]
 - [Diff-Match-Patch]        [Diff-Match-PatchURL]
@@ -353,7 +342,7 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 [MinifyURL]:                http://coderaiser.github.io/minify "Minify"
 [FancyBoxURL]:              //github.com/fancyapps/fancyBox "FancyBox"
 [jQuery-contextMenuURL]:    //github.com/medialize/jQuery-contextMenu "jQuery-contextMenu"
-[jq-consoleURL]:            //github.com/replit/jq-console‎ "jq-console"
+[jq-consoleURL]:            //github.com/replit/jq-console "jq-console"
 [githubURL]:                //github.com/michael/github "github"
 [dropbox-jsURL]:            //github.com/dropbox/dropbox-js "dropbox-js"
 [jqueryURL]:                //jquery.com
@@ -362,23 +351,23 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 [rimrafURL]:                //github.com/isaacs/rimraf "rimraf"
 [mkdirpURL]:                //github.com/substack/node-mkdirp
 
-Присоединиться к проекту
+Долучитися до проекту
 ---------------
-Если вы желаете присоединиться к проекту — направьте pull запрос в dev ветку.
-Получение dev версии **Cloud Commander**:
+Якщо ви хочете долучитися до проекту — відправте pull запит в dev гілку.
+Отримання dev версії **Cloud Commander**:
 
     git clone git://github.com/coderaiser/cloudcmd.git
     cd cloudcmd && git checkout dev
 
-Возможно, вам понадобится dev версия Minify,
-в таком случае наберите следующие команды:
+Можливо, вам знадобиться dev версія Minify,
+щоб отримати її, вам потрібно ввести декілька команд:
 
     cd node_modules
     rm -rf minify
     git clone git://github.com/coderaiser/minify
     git checkout dev
 
-История версий
+Історія версій
 ---------------
 - *2014.07.18*, **[v1.1.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v1.1.1.zip)**
 - *2014.07.10*, **[v1.1.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v1.1.0.zip)**
@@ -408,7 +397,9 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 - *2012.07.11*, **[v0.1.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v0.1.1.zip)**
 - *2012.07.09*, **[v0.1.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v0.1.0.zip)**
 
-Особая благодарность:
+Щира подяка:
 ---------------
-- [Polietilena](http://polietilena.github.io/ "Polietilena") за **logo** и **favicon**.
-- [TarZak](https://github.com/tarzak) за русский и украинский переводы.
+- [Polietilena](http://polietilena.github.io/ "Polietilena") за **logo** та **favicon**.
+- [TarZak](https://github.com/tarzak)
+    - Російський та український переклади;
+    - налаштування: [шаблон](html/config.html) та [стилі](css/config.css);
