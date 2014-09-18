@@ -14,7 +14,7 @@ lang:
    translation: Російською
 ---
 
-Cloud Commander 1.2.0
+Cloud Commander 1.3.0
 ===============
 ###[Головна][MainURL] [Блог][BlogURL] Наживо(![JitSu][JitSu_LIVE_IMG] [JitSu][JitSuURL], ![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 [NPM_INFO_IMG]:             https://nodei.co/npm/cloudcmd.png?downloads=true&&stars "npm install cloudcmd"
@@ -124,7 +124,7 @@ npm install cloudcmd -g #global install
 | `Ctrl + r`            | оновити
 | `Ctrl + d`            | очистити локальний кеш, що містить вміст папки
 | `Alt  + q`            | вимкнути прив'язку клавіш
-| `Alt  + s`            | відновити усі прив'язки клавіші
+| `Alt  + s`            | увімкнути прив'язку клавіш
 | `Ctrl + a`            | виділити усі файли на панелі
 | `Up`, `Down`, `Enter` | пересування файловою систему
 | `Ctrl + \`            | перейти до кореневого каталогу
@@ -187,8 +187,8 @@ npm install cloudcmd -g #global install
 - Редагування
 - Змінити назву
 - Видалити
-- Zip файл
-- UnZip файл
+- спакувати
+- розпакувати
 - Вивантажити до (Dropbox, Github, GDrive)
 - Завантажити
 - Новий (Файл, Папка, з хмари)
@@ -222,14 +222,11 @@ npm install cloudcmd -g #global install
     "minify"            : true,      /* мініфікація js, css, html та зображень                      */
     "cache"             : true,      /* додати контроль кешу                                        */
     "online"            : true,      /* загрузити файли js з cdn або Local path                     */
-    "logs"              : false,     /* виводити в логи чи в консоль                                */
     "showKeysPanel"     : true,      /* показати класичну панель з кнопками функціональних клавіш   */
     "server"            : true,      /* режим сервера чи тестування                                 */
     "socket"            : true,      /* увімкнути web сокети                                        */
     "port"              : 8000,      /* http порт                                                   */
-    "sslPort"           : 443,       /* https порт                                                  */
     "ip"                : null,      /* ip чи null(за замовчуванням)                                */
-    "ssl"               : false      /* використовувати https?                                      */
 }
 ```
 
@@ -390,6 +387,7 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 
 Історія версій
 ---------------
+- *2014.09.18*, **[v1.3.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v1.3.0.zip)**
 - *2014.08.29*, **[v1.2.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v1.2.0.zip)**
 - *2014.07.18*, **[v1.1.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v1.1.1.zip)**
 - *2014.07.10*, **[v1.1.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v1.1.0.zip)**
