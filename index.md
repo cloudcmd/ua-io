@@ -14,7 +14,7 @@ lang:
    translation: Російською
 ---
 
-Cloud Commander 2.1.0
+Cloud Commander 2.2.0
 ===============
 ###[Головна][MainURL] [Блог][BlogURL] Наживо(![JitSu][JitSu_LIVE_IMG] [JitSu][JitSuURL], ![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 [NPM_INFO_IMG]:             https://camo.githubusercontent.com/254a020afe689842501ef5a79c04ba909f9b29d2/68747470733a2f2f6e6f6465692e636f2f6e706d2f636c6f7564636d642e706e673f646f776e6c6f6164733d7472756526267374617273 "npm install cloudcmd"
@@ -48,6 +48,7 @@ Cloud Commander 2.1.0
 **Cloud Commander** встановлюється дуже просто:
 
 - встановити [node.js](http://nodejs.org/ "node.js") або [io.js](https://iojs.org/ "io.js"), якщо ви цього ще не зробили.
+- встановити [bower](http://bower.io "Bower") і [git](http://git-scm.com "Git") ([Як встановити Git під Windows (en)](https://github.com/bower/bower#windows-users "Як встановити Git під Windows (en)"))
 - встановити ```cloudcmd``` через npm:
  
 ```sh
@@ -75,12 +76,6 @@ cloudcmd
 Якщо не задано параметрів, Cloud Commander читає інформацію з `~/.cloudcmd.json` і використовує стандартний порт звідти (`8000` по замовчуванню), якщо змінних з іменами `PORT` або `VCAP_APP_PORT` не існує.
 
 Для початку роботи, наберіть в адресному рядку вашого браузера:
-
-```
-http://localhost:<port>
-```
-
-При налаштуваннях по замовчуванню:
 
 ```
 http://localhost:8000
@@ -123,15 +118,15 @@ npm i cloudcmd -g
 | `Ctrl + r`            | оновити
 | `Ctrl + d`            | очистити локальний кеш, що містить вміст папки
 | `Ctrl + a`            | виділити усі файли на панелі
-| `Up`, `Down`, `Enter` | пересування файловою систему
+| `Up`, `Down`, `Enter` | пересування файловою системою
 | `Ctrl + \`            | перейти до кореневого каталогу
 | `Tab`                 | переміщення між панелями
 | `Page Up`             | вгору на одну сторінку
 | `Page Down`           | вниз на одну сторінку 
 | `Home`                | на початок списку 
 | `End`                 | в кінець списку
-| `Space`               | обрати поточнний файл (і отримати розмір папки)
-| `Insert`              | обрати поточнний файл (і перейти до наступного)
+| `Space`               | обрати поточний файл (і отримати розмір папки)
+| `Insert`              | обрати поточний файл (і перейти до наступного)
 | `Shift + F10`         | контекстне меню
 | `~`                   | консоль
 | `Ctrl + Click`        | відкрити файл в новій вкладці
@@ -146,7 +141,7 @@ npm i cloudcmd -g
 - Програти аудіо.
 - Програти відео.
 
-###Гарячі клавіші
+### Гарячі клавіші
 |Клавіша                |Дія
 |:----------------------|:--------------------------------------------
 | `F3`                  | відкрити
@@ -156,25 +151,10 @@ npm i cloudcmd -g
 ---------------
 ![Edit](http://cloudcmd.io/img/screen/edit.png "Edit")
 
-
-### Можливості
-- Підсвітка синтаксису в залежності від типу файла, для більш ніж 110 мов.
-- Вбудований `emmet` (для html файлів)
-- Drag'n'drop (перетягніть файл з робочого столу в редактор)
-- Вбудований `jshint` (з опціями в `.jshintrc` файлі)
-- Вбудований `beautifier` (з опціями в `json/beautify.json`, можуть бути переназначені в `~/.beautify.json`)
-- Налаштування (можна відредагувати в `json/edit.json`)
-
 ### Гарячі клавіші
 |Клавіша                |Дія
 |:----------------------|:--------------------------------------------
 | `F4`                  | відкрити
-| `Ctrl + s`            | зберегти
-| `Ctrl + f`            | пошук
-| `Ctrl + f + f`        | заміна
-| `Ctrl + g`            | перейти до рядка
-| `Ctrl + b`            | beautify js, css або html
-| `Ctrl + m`            | minify js, css або html
 | `Esc`                 | закрити
 
 [Гарячі клавіші Edward](https://github.com/cloudcmd/edward/#hot-keys "Гарячі клавіші Edward").
@@ -190,7 +170,7 @@ npm i cloudcmd -g
 | `Ctrl + p`            | вставити шлях поточної папки
 | `Esc`                 | закрити
 
-[Гарячі клавіші console](https://github.com/cloudcmd/console#hot-keys "Гарячі клавіші console").
+[Гарячі клавіші console](https://github.com/cloudcmd/console#hot-keys).
 
 Налаштування
 ---------------
@@ -211,6 +191,7 @@ npm i cloudcmd -g
     "auth"              : false,     /* дозволити http авторизацію                                  */
     "username"          : "root",    /* ім'я користувача для авторизації                            */
     "password"          : "toor",    /* хеш пароль в sha-1 для авторизації                          */
+    "editor"            : "edward",  /* стандартний, може бути "dword" або "edward"                 */
     "diff"              : false,     /* при збереженні - відсилає патч, а не повний файл            */
     "zip"               : false,     /* zip текст пере посиланням / unzip перед збереженням         */
     "notifications"     : false,     /* показувати сповіщення, коли вкладка не активна              */
@@ -268,7 +249,7 @@ iptables -t nat -A PREROUTING -p tcp --dport 443 -j REDIRECT --to-ports 4430
 iptables -t nat -L # look rules after
 ```
 
-Ви маєте побачити щось назразок ( **8000** та **4430** мають бути в config як **port** і **sslPort** )
+Ви маєте побачити щось на зразок ( **8000** та **4430** мають бути в config як **port** і **sslPort** )
 
 ```
 target     prot opt source               destination
@@ -306,7 +287,7 @@ server {
 }
 ```
 
-Якщо ви бажаєте додати **ssl**, додайте декілька рядків в розділ серверу:
+Якщо ви бажаєте додати **SSL**, додайте декілька рядків в розділ серверу:
 
 ```sh
 server {
@@ -343,6 +324,7 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 
 Історія версій
 ---------------
+- *2015.03.13*, **[v2.2.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v2.2.0.zip)**
 - *2015.02.02*, **[v2.1.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v2.1.0.zip)**
 - *2014.12.09*, **[v2.0.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v2.0.0.zip)**
 - *2014.11.21*, **[v1.5.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v1.5.1.zip)**
