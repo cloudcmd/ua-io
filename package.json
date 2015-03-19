@@ -1,0 +1,23 @@
+{
+  "name": "cloudcmd-ua",
+  "version": "2.2.0",
+  "private": true,
+  "description": "ua",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "curl https://raw.githubusercontent.com/cloudcmd/ua/gh-pages/index.md > index.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cloudcmd/ru.git"
+  },
+  "author": "coderaiser <mnemonic.enemy@gmail.com> (http://coderaiser.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cloudcmd/ru/issues"
+  },
+  "homepage": "https://github.com/cloudcmd/ru",
+  "devDependencies": {
+  },
+  "dependencies": {}
+}
