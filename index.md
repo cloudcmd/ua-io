@@ -14,7 +14,7 @@ lang:
    translation: Російською
 ---
 
-Cloud Commander 2.4.0
+Cloud Commander 2.4.2
 ===============
 ###[Головна][MainURL] [Блог][BlogURL] Наживо(![JitSu][JitSu_LIVE_IMG] [JitSu][JitSuURL], ![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 [NPM_INFO_IMG]:             https://camo.githubusercontent.com/254a020afe689842501ef5a79c04ba909f9b29d2/68747470733a2f2f6e6f6465692e636f2f6e706d2f636c6f7564636d642e706e673f646f776e6c6f6164733d7472756526267374617273 "npm install cloudcmd"
@@ -52,7 +52,6 @@ Cloud Commander 2.4.0
 **Cloud Commander** встановлюється дуже просто:
 
 - встановити [node.js](http://nodejs.org/ "node.js") або [io.js](https://iojs.org/ "io.js"), якщо ви цього ще не зробили.
-- встановити [bower](http://bower.io "Bower") і [git](http://git-scm.com "Git") ([Як встановити Git під Windows (en)](https://github.com/bower/bower#windows-users "Як встановити Git під Windows (en)"))
 - встановити ```cloudcmd``` через npm:
  
 ```sh
@@ -74,8 +73,17 @@ cloudcmd
 |Параметр               |Дія
 |:----------------------|:--------------------------------------------
 | `-h, --help`          | допомога
-| `-v, --version`       | виводить версію
-| `-p, --port`          | назначити порт
+| `-v, --version`       | вивести версію і вийти
+| `-s, --save`          | зберегти налаштування
+| `-o, --online`        | вантажити скрипти з віддалених серверів
+| `-a, --auth`          | увімкнути авторизацію
+| `-u, --username`      | вказати ім'я користувача
+| `-p, --password`      | вказати пароль
+| `-c, --config`        | шлях до файлу налаштувань
+| `--port`              | вказати порт
+| `--no-auth`           | вимкнути авторизацію
+| `--no-server`         | не запускати сервер
+| `--no-online`         | вантажити скрипти з локального серверу
 
 Якщо не задано параметрів, Cloud Commander читає інформацію з `~/.cloudcmd.json` і використовує стандартний порт звідти (`8000` по замовчуванню), якщо змінних з іменами `PORT` або `VCAP_APP_PORT` не існує.
 
@@ -195,6 +203,7 @@ npm i cloudcmd -g
     "auth"              : false,     /* дозволити http авторизацію                                  */
     "username"          : "root",    /* ім'я користувача для авторизації                            */
     "password"          : "toor",    /* хеш пароль в sha-1 для авторизації                          */
+    "algo"              : "sha512WithRSAEncryption", /* криптографічний алгоритм                    */
     "editor"            : "edward",  /* стандартний, може бути "dword" або "edward"                 */
     "diff"              : false,     /* при збереженні - відсилає патч, а не повний файл            */
     "zip"               : false,     /* zip текст пере посиланням / unzip перед збереженням         */
@@ -328,6 +337,8 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 
 Історія версій
 ---------------
+- *2015.04.03*, **[v2.4.2](//github.com/cloudcmd/archive/raw/master/cloudcmd-v2.4.2.tar.gz)**
+- *2015.03.28*, **[v2.4.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v2.4.1.tar.gz)**
 - *2015.03.28*, **[v2.4.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v2.4.0.tar.gz)**
 - *2015.03.26*, **[v2.3.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v2.3.1.tar.gz)**
 - *2015.03.26*, **[v2.3.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v2.3.0.tar.gz)**
