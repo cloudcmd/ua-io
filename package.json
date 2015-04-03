@@ -6,8 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "release": "curl https://raw.githubusercontent.com/cloudcmd/ua/gh-pages/index.md > index.md",
     "commit": "git commit -am 'docs(index) update'",
-    "push" : "git push origin gh-pages",
-    "publish": "npm run release && npm run commit && npm run push"
+    "push" : "git pull --rebase && git push origin gh-pages",
+    "publish": "npm run commit && npm run push"
   },
   "repository": {
     "type": "git",
