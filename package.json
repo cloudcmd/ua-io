@@ -1,5 +1,6 @@
 {
   "name": "cloudcmd-ua",
+  "version": "2.4.2",
   "private": true,
   "description": "ua",
   "scripts": {
@@ -7,7 +8,8 @@
     "release": "curl https://raw.githubusercontent.com/cloudcmd/ua/gh-pages/index.md > index.md",
     "commit": "git commit -am 'docs(index) update'",
     "push" : "git pull --rebase && git push origin gh-pages",
-    "publish": "npm run commit && npm run push"
+    "publish": "npm run commit && npm run push",
+    "wisdom": "npm run release"
   },
   "repository": {
     "type": "git",
