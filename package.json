@@ -2,14 +2,13 @@
   "name": "cloudcmd-ua",
   "version": "2.4.2",
   "private": true,
+  "changelog": false,
   "description": "ua",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "release": "curl https://raw.githubusercontent.com/cloudcmd/ua/gh-pages/index.md > index.md",
-    "commit": "git commit -am 'docs(index) update'",
-    "push" : "git pull --rebase && git push origin gh-pages",
-    "publish": "npm run commit && npm run push",
-    "wisdom": "npm run release"
+    "add": "git add --all",
+    "wisdom": "npm run release && npm run add"
   },
   "repository": {
     "type": "git",
