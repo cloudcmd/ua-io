@@ -4,12 +4,12 @@
   "private": true,
   "changelog": false,
   "release": false,
+  "branch": "gh-pages",
   "description": "ua",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "release": "curl https://raw.githubusercontent.com/cloudcmd/ua/gh-pages/index.md > index.md",
-    "add": "git add --all",
-    "wisdom": "npm run release && npm run add"
+    "wisdom": "npm run release"
   },
   "repository": {
     "type": "git",
