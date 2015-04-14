@@ -16,7 +16,7 @@ lang:
 hideDownloadButtons: true
 ---
 
-Cloud Commander 2.5.0
+Cloud Commander 2.5.1
 ===============
 ###[Головна][MainURL] [Блог][BlogURL] Наживо(![JitSu][JitSu_LIVE_IMG] [JitSu][JitSuURL], ![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 [NPM_INFO_IMG]:             https://camo.githubusercontent.com/254a020afe689842501ef5a79c04ba909f9b29d2/68747470733a2f2f6e6f6465692e636f2f6e706d2f636c6f7564636d642e706e673f646f776e6c6f6164733d7472756526267374617273 "npm install cloudcmd"
@@ -82,6 +82,7 @@ cloudcmd
 | `-u, --username`      | вказати ім'я користувача
 | `-p, --password`      | вказати пароль
 | `-c, --config`        | шлях до файлу налаштувань
+| `--root`              | встановити кореневу папку
 | `--port`              | вказати порт
 | `--no-auth`           | вимкнути авторизацію
 | `--no-server`         | не запускати сервер
@@ -219,6 +220,7 @@ npm i cloudcmd -g
     "showKeysPanel"     : true,      /* показати класичну панель з кнопками функціональних клавіш   */
     "port"              : 8000,      /* http порт                                                   */
     "ip"                : null,      /* ip чи null(за замовчуванням)                                */
+    "root"              : "/"        /* коренева папка                                              */
 }
 ```
 
@@ -339,6 +341,7 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 
 Історія версій
 ---------------
+- *2015.04.14*, **[v2.5.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v2.5.1.tar.gz)**
 - *2015.04.09*, **[v2.5.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v2.5.0.tar.gz)**
 - *2015.04.03*, **[v2.4.2](//github.com/cloudcmd/archive/raw/master/cloudcmd-v2.4.2.tar.gz)**
 - *2015.03.28*, **[v2.4.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v2.4.1.tar.gz)**

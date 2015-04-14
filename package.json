@@ -1,6 +1,6 @@
 {
   "name": "cloudcmd-ua",
-  "version": "2.4.2",
+  "version": "2.5.1",
   "private": true,
   "changelog": false,
   "release": false,
@@ -21,7 +21,6 @@
     "url": "https://github.com/cloudcmd/ru/issues"
   },
   "homepage": "https://github.com/cloudcmd/ru",
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "dependencies": {}
 }
