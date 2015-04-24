@@ -16,7 +16,7 @@ lang:
 hideDownloadButtons: true
 ---
 
-Cloud Commander 2.7.0
+Cloud Commander 2.7.1
 ===============
 ###[Головна][MainURL] [Блог][BlogURL] Наживо(![JitSu][JitSu_LIVE_IMG] [JitSu][JitSuURL], ![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 [NPM_INFO_IMG]:             https://camo.githubusercontent.com/254a020afe689842501ef5a79c04ba909f9b29d2/68747470733a2f2f6e6f6465692e636f2f6e706d2f636c6f7564636d642e706e673f646f776e6c6f6164733d7472756526267374617273 "npm install cloudcmd"
@@ -31,7 +31,7 @@ Cloud Commander 2.7.0
 [EDWARD]:                   https://github.com/cloudcmd/edward "Editor based on Ace"
 [EDWARD_KEYS]:              https://github.com/cloudcmd/edward/#hot-keys "Edward Hot keys"
 
-**Cloud Commander** - двопанельний веб файл менеджер з консоллю та редактором. Допоможе вам керувати сервером та працювати з файлами, папками і програмами в браузері на будь-якому комп'ютері, смартфоні або планшеті.
+**Cloud Commander** - двопанельний веб файл менеджер з консоллю та редактором. Допоможе вам керувати сервером та працювати з файлами, каталогами і програмами в браузері на будь-якому комп'ютері, смартфоні або планшеті.
 
 ![Cloud Commander](http://cloudcmd.io/img/logo/cloudcmd.png "Cloud Commander")
 
@@ -82,7 +82,7 @@ cloudcmd
 | `-u, --username`      | вказати ім'я користувача
 | `-p, --password`      | вказати пароль
 | `-c, --config`        | шлях до файлу налаштувань
-| `--root`              | встановити кореневу папку
+| `--root`              | встановити кореневий каталог
 | `--port`              | вказати порт
 | `--no-auth`           | вимкнути авторизацію
 | `--no-server`         | не запускати сервер
@@ -118,7 +118,7 @@ npm i cloudcmd -g
 | `F4`                  | редагувати
 | `F5`                  | копіювати
 | `F6`                  | змінити назву/перемістити
-| `F7`                  | нова папка
+| `F7`                  | новий каталог
 | `Shift + F7`          | новий файл
 | `Shift + Delete`      | знищити без підтвердження
 | `F8`, `Delete`        | знищити обраний файл
@@ -131,7 +131,7 @@ npm i cloudcmd -g
 | `Ctrl + с`            | копіювати в буфер
 | `Ctrl + v`            | вставити з буфера
 | `Ctrl + r`            | оновити
-| `Ctrl + d`            | очистити локальний кеш, що містить вміст папки
+| `Ctrl + d`            | очистити локальний кеш, що містить листінг каталогів
 | `Ctrl + a`            | виділити усі файли на панелі
 | `Up`, `Down`, `Enter` | пересування файловою системою
 | `Ctrl + \`            | перейти до кореневого каталогу
@@ -140,7 +140,7 @@ npm i cloudcmd -g
 | `Page Down`           | вниз на одну сторінку 
 | `Home`                | на початок списку 
 | `End`                 | в кінець списку
-| `Space`               | обрати поточний файл (і отримати розмір папки)
+| `Space`               | обрати поточний файл (і отримати розмір каталогу)
 | `Insert`              | обрати поточний файл (і перейти до наступного)
 | `Shift + F10`         | контекстне меню
 | `~`                   | консоль
@@ -182,7 +182,7 @@ npm i cloudcmd -g
 |Клавіша                |Дія
 |:----------------------|:--------------------------------------------
 | `~`                   | відкрити
-| `Ctrl + p`            | вставити шлях поточної папки
+| `Ctrl + p`            | вставити шлях поточного каталогу
 | `Esc`                 | закрити
 
 [Гарячі клавіші console](https://github.com/cloudcmd/console#hot-keys).
@@ -211,16 +211,16 @@ npm i cloudcmd -g
     "diff"              : false,     /* при збереженні - відсилає патч, а не повний файл            */
     "zip"               : false,     /* zip текст пере посиланням / unzip перед збереженням         */
     "notifications"     : false,     /* показувати сповіщення, коли вкладка не активна              */
-    "localStorage"      : true,      /* кешування вмісту папки                                      */
+    "localStorage"      : true,      /* локальне сховище                                            */
     "buffer"            : true,      /* буфер для копіювання файлів                                 */
-    "dirStorage"        : true,      /* зберігає лістинг папки в localStorage                       */
+    "dirStorage"        : true,      /* зберігаті лістинг каталогів в localStorage                  */
     "minify"            : true,      /* мініфікація js, css, html та зображень                      */
     "cache"             : true,      /* додати контроль кешу                                        */
     "online"            : true,      /* загрузити файли js з cdn або Local path                     */
     "showKeysPanel"     : true,      /* показати класичну панель з кнопками функціональних клавіш   */
     "port"              : 8000,      /* http порт                                                   */
     "ip"                : null,      /* ip чи null(за замовчуванням)                                */
-    "root"              : "/"        /* коренева папка                                              */
+    "root"              : "/"        /* кореневий каталог                                           */
 }
 ```
 
@@ -238,7 +238,7 @@ npm i cloudcmd -g
 - Вивантажити
 - Вивантажити до (Dropbox, Github, GDrive)
 - Завантажити
-- Новий (Файл, Папка, з хмари)
+- Новий (Файл, Каталог, з хмари)
 - Вирізати
 - Копіювати
 - Вставити
@@ -341,6 +341,7 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 
 Історія версій
 ---------------
+- *2015.04.24*, **[v2.7.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v2.7.1.tar.gz)**
 - *2015.04.24*, **[v2.7.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v2.7.0.tar.gz)**
 - *2015.04.17*, **[v2.6.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v2.6.0.tar.gz)**
 - *2015.04.14*, **[v2.5.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v2.5.1.tar.gz)**
