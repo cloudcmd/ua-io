@@ -16,7 +16,7 @@ lang:
 hideDownloadButtons: true
 ---
 
-Cloud Commander 2.7.1
+Cloud Commander 2.8.0
 ===============
 ###[Головна][MainURL] [Блог][BlogURL] Наживо(![JitSu][JitSu_LIVE_IMG] [JitSu][JitSuURL], ![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 [NPM_INFO_IMG]:             https://camo.githubusercontent.com/254a020afe689842501ef5a79c04ba909f9b29d2/68747470733a2f2f6e6f6465692e636f2f6e706d2f636c6f7564636d642e706e673f646f776e6c6f6164733d7472756526267374617273 "npm install cloudcmd"
@@ -82,11 +82,14 @@ cloudcmd
 | `-u, --username`      | вказати ім'я користувача
 | `-p, --password`      | вказати пароль
 | `-c, --config`        | шлях до файлу налаштувань
+| `--editor`            | вказати редактор: "dword" або "edward"
 | `--root`              | встановити кореневий каталог
 | `--port`              | вказати порт
 | `--no-auth`           | вимкнути авторизацію
 | `--no-server`         | не запускати сервер
 | `--no-online`         | вантажити скрипти з локального серверу
+| `--minify`            | увімкнути мініфікацію
+| `--no-minify`         | вимкнути мініфікацію
 
 Якщо не задано параметрів, Cloud Commander читає інформацію з `~/.cloudcmd.json` і використовує стандартний порт звідти (`8000` по замовчуванню), якщо змінних з іменами `PORT` або `VCAP_APP_PORT` не існує.
 
@@ -133,7 +136,9 @@ npm i cloudcmd -g
 | `Ctrl + r`            | оновити
 | `Ctrl + d`            | очистити локальний кеш, що містить лістінг каталогів
 | `Ctrl + a`            | виділити усі файли на панелі
+| `Ctrl + u`            | поміняти панелі місцями
 | `Up`, `Down`, `Enter` | пересування файловою системою
+| `Alt + Left/Right`    | показати вміст каталогу під курсором у цільовій панелі
 | `Ctrl + \`            | перейти до кореневого каталогу
 | `Tab`                 | переміщення між панелями
 | `Page Up`             | вгору на одну сторінку
@@ -341,6 +346,7 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 
 Історія версій
 ---------------
+- *2015.05.14*, **[v2.8.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v2.8.0.tar.gz)**
 - *2015.04.24*, **[v2.7.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v2.7.1.tar.gz)**
 - *2015.04.24*, **[v2.7.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v2.7.0.tar.gz)**
 - *2015.04.17*, **[v2.6.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v2.6.0.tar.gz)**
