@@ -16,7 +16,7 @@ lang:
 hideDownloadButtons: true
 ---
 
-Cloud Commander 3.2.0
+Cloud Commander 3.3.0
 ===============
 ###[Головна][MainURL] [Блог][BlogURL] Наживо(![JitSu][JitSu_LIVE_IMG] [JitSu][JitSuURL], ![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 [NPM_INFO_IMG]:             https://camo.githubusercontent.com/254a020afe689842501ef5a79c04ba909f9b29d2/68747470733a2f2f6e6f6465692e636f2f6e706d2f636c6f7564636d642e706e673f646f776e6c6f6164733d7472756526267374617273 "npm install cloudcmd"
@@ -106,7 +106,7 @@ http://localhost:8000
 Якщо ви встановили Cloud Commander за допомогою `npm`, зупиніть додаток і переустановіть його:
 
 ```sh
-npm i cloudcmd -g
+npm update cloudcmd -g
 ```
 
 Після цього знову запустіть додаток, почистіть кеш вашого браузеру та оновіть сторінку.
@@ -252,6 +252,7 @@ npm i cloudcmd -g
 - Копіювати
 - Вставити
 - Виділити все / зняти виділення
+- Вийти (доступно якщо увмікнуто `авторизацію`)
  
 ###Гарячі клавіші
 |Клавіша                |Дія
@@ -357,6 +358,7 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 
 Історія версій
 ---------------
+- *2015.06.20*, **[v3.3.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v3.3.0.tar.gz)**
 - *2015.06.12*, **[v3.2.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v3.2.0.tar.gz)**
 - *2015.06.11*, **[v3.1.4](//github.com/cloudcmd/archive/raw/master/cloudcmd-v3.1.4.tar.gz)**
 - *2015.06.11*, **[v3.1.3](//github.com/cloudcmd/archive/raw/master/cloudcmd-v3.1.3.tar.gz)**
