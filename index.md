@@ -16,7 +16,7 @@ lang:
 hideDownloadButtons: true
 ---
 
-Cloud Commander 3.3.0
+Cloud Commander 3.4.0
 ===============
 ###[Головна][MainURL] [Блог][BlogURL] Наживо(![JitSu][JitSu_LIVE_IMG] [JitSu][JitSuURL], ![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 [NPM_INFO_IMG]:             https://camo.githubusercontent.com/254a020afe689842501ef5a79c04ba909f9b29d2/68747470733a2f2f6e6f6465692e636f2f6e706d2f636c6f7564636d642e706e673f646f776e6c6f6164733d7472756526267374617273 "npm install cloudcmd"
@@ -222,7 +222,7 @@ npm update cloudcmd -g
     "localStorage"      : true,      /* локальне сховище                                            */
     "buffer"            : true,      /* буфер для копіювання файлів                                 */
     "dirStorage"        : true,      /* зберігаті лістинг каталогів в localStorage                  */
-    "minify"            : true,      /* мініфікація js, css, html та зображень                      */
+    "minify"            : false,     /* мініфікація js, css, html та зображень                      */
     "cache"             : true,      /* додати контроль кешу                                        */
     "online"            : true,      /* загрузити файли js з cdn або Local path                     */
     "showKeysPanel"     : true,      /* показати класичну панель з кнопками функціональних клавіш   */
@@ -266,6 +266,35 @@ Cloud Commander може працювати в режимі однієї пан�
 Таке може статися коли Ви працюєте з файловим менеджером із мобільного засобу, планшету або у маленькому вікні браузера.
 
 ![Режим однієї панелі](http://cloudcmd.io/img/screen/one-panel-mode.png "Режим однієї панелі")
+
+Використання у ролі Middleware
+---------------
+
+Cloud Commander можна використовувати як middleware для `node.js` додатків, що побудовані на  [socket.io](http://socket.io "Socket.IO") та [express](http://expressjs.com "Express"):
+
+```js
+var http        = require('http'),
+    cloudcmd    = require('cloudcmd'),
+    express     = require('express'),
+    io          = require('socket.io'),
+    app         = express(),
+    
+    PORT        = 31337,
+    
+    server,
+    socket;
+    
+server = http.createServer(app);
+socket = io.listen(server);
+
+app.use(cloudcmd({
+    prefix: '/prefix',  /* основний URL (не обовз'язково)                                                      */
+    socket: socket,     /* використовується Config'ом, Edit'ом (не обов'язково) та Console'ллю (обов'язково)   */
+    config: {}          /* дані налаштуваннь (не обов'язково)                                                  */
+}));
+
+server.listen(PORT);
+```
 
 Сервер
 ---------------
@@ -358,6 +387,7 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 
 Історія версій
 ---------------
+- *2015.06.22*, **[v3.4.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v3.4.0.tar.gz)**
 - *2015.06.20*, **[v3.3.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v3.3.0.tar.gz)**
 - *2015.06.12*, **[v3.2.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v3.2.0.tar.gz)**
 - *2015.06.11*, **[v3.1.4](//github.com/cloudcmd/archive/raw/master/cloudcmd-v3.1.4.tar.gz)**
