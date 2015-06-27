@@ -16,7 +16,7 @@ lang:
 hideDownloadButtons: true
 ---
 
-Cloud Commander 3.4.0
+Cloud Commander 3.5.0
 ===============
 ###[Головна][MainURL] [Блог][BlogURL] Наживо(![JitSu][JitSu_LIVE_IMG] [JitSu][JitSuURL], ![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 [NPM_INFO_IMG]:             https://camo.githubusercontent.com/254a020afe689842501ef5a79c04ba909f9b29d2/68747470733a2f2f6e6f6465692e636f2f6e706d2f636c6f7564636d642e706e673f646f776e6c6f6164733d7472756526267374617273 "npm install cloudcmd"
@@ -90,8 +90,8 @@ cloudcmd
 | `--no-online`             | вантажити скрипти з локального серверу
 | `--minify`                | увімкнути мініфікацію
 | `--no-minify`             | вимкнути мініфікацію
-| `--progress-of-copying`   | показувати статус копіювання
-| `--no-progress-of-copying`| не показувати статус копіювання
+| `--progress`              | показувати статус файлових операцій
+| `--no-progress`           | не показувати статус файлових операцій
 
 Якщо не задано параметрів, Cloud Commander читає інформацію з `~/.cloudcmd.json` і використовує стандартний порт звідти (`8000` по замовчуванню), якщо змінних з іменами `PORT` або `VCAP_APP_PORT` не існує.
 
@@ -229,7 +229,7 @@ npm update cloudcmd -g
     "port"              : 8000,      /* http порт                                                   */
     "ip"                : null,      /* ip чи null(за замовчуванням)                                */
     "root"              : "/"        /* кореневий каталог                                           */
-    "progressOfCopying" : false      /* показувати статус копіювання                                */
+    "progress"          : false      /* показувати статус файлових операцій                         */
 }
 ```
 
@@ -279,7 +279,7 @@ var http        = require('http'),
     io          = require('socket.io'),
     app         = express(),
     
-    PORT        = 31337,
+    PORT        = 1337,
     
     server,
     socket;
@@ -288,9 +288,9 @@ server = http.createServer(app);
 socket = io.listen(server);
 
 app.use(cloudcmd({
-    prefix: '/prefix',  /* основний URL (не обовз'язково)                                                      */
-    socket: socket,     /* використовується Config'ом, Edit'ом (не обов'язково) та Console'ллю (обов'язково)   */
-    config: {}          /* дані налаштуваннь (не обов'язково)                                                  */
+    prefix: '/cloudcmd', /* основний URL або функція що повертає основний URL (не обов'язково)                  */
+    socket: socket,      /* використовується Config'ом, Edit'ом (не обов'язково) та Console'ллю (обов'язково)   */
+    config: {}           /* дані налаштуваннь (не обов'язково)                                                  */
 }));
 
 server.listen(PORT);
@@ -387,6 +387,7 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 
 Історія версій
 ---------------
+- *2015.06.27*, **[v3.5.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v3.5.0.tar.gz)**
 - *2015.06.22*, **[v3.4.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v3.4.0.tar.gz)**
 - *2015.06.20*, **[v3.3.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v3.3.0.tar.gz)**
 - *2015.06.12*, **[v3.2.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v3.2.0.tar.gz)**
