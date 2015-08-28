@@ -16,7 +16,7 @@ lang:
 hideDownloadButtons: true
 ---
 
-Cloud Commander 4.5.0
+Cloud Commander 4.5.1
 ===============
 ###[Головна][MainURL] [Блог][BlogURL] Наживо(![JitSu][JitSu_LIVE_IMG] [JitSu][JitSuURL], ![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 [NPM_INFO_IMG]:             https://camo.githubusercontent.com/254a020afe689842501ef5a79c04ba909f9b29d2/68747470733a2f2f6e6f6465692e636f2f6e706d2f636c6f7564636d642e706e673f646f776e6c6f6164733d7472756526267374617273 "npm install cloudcmd"
@@ -246,13 +246,14 @@ npm update cloudcmd -g
 - Видалити
 - Запакувати
 - Видобути
-- Вивантажити до (Dropbox, Github, GDrive)
+- Вивантажити в хмарку
 - Завантажити
 - Вирізати
 - Копіювати
 - Вставити
-- Новий (Файл, Каталог, з хмари)
+- Новий (Файл, Каталог)
 - Вивантажити
+- Вивантажити з хмарки
 - Виділити все / зняти виділення
 - Вийти (доступно якщо увімкнуто `авторизацію`)
  
@@ -391,6 +392,7 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 
 Історія версій
 ---------------
+- *2015.08.28*, **[v4.5.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v4.5.1.tar.gz)**
 - *2015.08.26*, **[v4.5.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v4.5.0.tar.gz)**
 - *2015.08.25*, **[v4.4.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v4.4.0.tar.gz)**
 - *2015.08.21*, **[v4.3.5](//github.com/cloudcmd/archive/raw/master/cloudcmd-v4.3.5.tar.gz)**
