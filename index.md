@@ -16,7 +16,7 @@ lang:
 hideDownloadButtons: true
 ---
 
-Cloud Commander 5.0.9
+Cloud Commander 5.0.10
 ===============
 ###[Головна][MainURL] [Блог][BlogURL] Наживо(![JitSu][JitSu_LIVE_IMG] [JitSu][JitSuURL], ![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 [NPM_INFO_IMG]:             https://camo.githubusercontent.com/254a020afe689842501ef5a79c04ba909f9b29d2/68747470733a2f2f6e6f6465692e636f2f6e706d2f636c6f7564636d642e706e673f646f776e6c6f6164733d7472756526267374617273 "npm install cloudcmd"
@@ -412,6 +412,7 @@ docker run -v ~:/root -v /:/mnt/fs -it -p 8000:8000 coderaiser/cloudcmd
 
 Історія версій
 ---------------
+- *2016.02.04*, **[v5.0.10](//github.com/cloudcmd/archive/raw/master/cloudcmd-v5.0.10.tar.gz)**
 - *2016.02.02*, **[v5.0.9](//github.com/cloudcmd/archive/raw/master/cloudcmd-v5.0.9.tar.gz)**
 - *2016.02.01*, **[v5.0.8](//github.com/cloudcmd/archive/raw/master/cloudcmd-v5.0.8.tar.gz)**
 - *2016.01.20*, **[v5.0.7](//github.com/cloudcmd/archive/raw/master/cloudcmd-v5.0.7.tar.gz)**
