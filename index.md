@@ -16,7 +16,7 @@ lang:
 hideDownloadButtons: true
 ---
 
-Cloud Commander 5.2.0
+Cloud Commander 5.2.1
 ===============
 ###[Головна][MainURL] [Блог][BlogURL] Наживо(![JitSu][JitSu_LIVE_IMG] [JitSu][JitSuURL], ![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 [NPM_INFO_IMG]:             https://camo.githubusercontent.com/254a020afe689842501ef5a79c04ba909f9b29d2/68747470733a2f2f6e6f6465692e636f2f6e706d2f636c6f7564636d642e706e673f646f776e6c6f6164733d7472756526267374617273 "npm install cloudcmd"
@@ -30,8 +30,6 @@ Cloud Commander 5.2.0
 [DWORD]:                    https://github.com/cloudcmd/dword "Editor based on CodeMirror"
 [EDWARD]:                   https://github.com/cloudcmd/edward "Editor based on Ace"
 [EDWARD_KEYS]:              https://github.com/cloudcmd/edward/#hot-keys "Edward Hot keys"
-
-[Docker_URL]:                https://docker.io "Docker"
 
 **Cloud Commander** - двопанельний веб файл менеджер з консоллю та редактором. Допоможе вам керувати сервером та працювати з файлами, каталогами і програмами в браузері на будь-якому комп'ютері, смартфоні або планшеті.
 
@@ -55,7 +53,7 @@ Cloud Commander 5.2.0
 
 **Cloud Commander** встановлюється дуже просто:
 
-- встановити [node.js](http://nodejs.org/ "node.js") або [io.js](https://iojs.org/ "io.js"), якщо ви цього ще не зробили.
+- встановити останню версію [node.js](http://nodejs.org/ "node.js"), якщо ви цього ще не зробили.
 - встановити ```cloudcmd``` через npm:
  
 ```sh
@@ -403,9 +401,15 @@ ln -s ./sites-enabled/io.cloudcmd.io ./sites-available
 /etc/init.d/nginx restart
 ```
 
+Розгортання
+---------------
+`Cloud Commander` з легкістю можна розгорнути на [Heroku](https://heroku.com/deploy?template=https://github.com/coderaiser/cloudcmd "Розгорнути на Heroku").
+
+[![Розгорнути на Heroku](https://www.herokucdn.com/deploy/button.png "Розгорнути на Heroku")](https://heroku.com/deploy?template=https://github.com/coderaiser/cloudcmd)
+
 Docker
 ---------------
-`Cloud Commander` може бути використаний як [docker][DOCKER_URL] контейнер:
+`Cloud Commander` може бути використаний як [docker контейнер](https://hub.docker.com/r/coderaiser/cloudcmd/ "Docker контейнер"):
 
 ```sh
 docker run -v ~:/root -v /:/mnt/fs -it -p 8000:8000 coderaiser/cloudcmd
@@ -417,6 +421,7 @@ docker run -v ~:/root -v /:/mnt/fs -it -p 8000:8000 coderaiser/cloudcmd
 
 Історія версій
 ---------------
+- *2016.03.07*, **[v5.2.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v5.2.1.tar.gz)**
 - *2016.03.05*, **[v5.2.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v5.2.0.tar.gz)**
 - *2016.02.26*, **[v5.1.5](//github.com/cloudcmd/archive/raw/master/cloudcmd-v5.1.5.tar.gz)**
 - *2016.02.25*, **[v5.1.4](//github.com/cloudcmd/archive/raw/master/cloudcmd-v5.1.4.tar.gz)**
