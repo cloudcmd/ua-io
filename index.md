@@ -412,12 +412,31 @@ Docker
 `Cloud Commander` може бути використаний як [docker контейнер](https://hub.docker.com/r/coderaiser/cloudcmd/ "Docker контейнер"):
 
 ```sh
-docker run -v ~:/root -v /:/mnt/fs -it -p 8000:8000 coderaiser/cloudcmd
+docker run -v ~:/root -v /:/mnt/fs -t -p 8000:8000 coderaiser/cloudcmd
 ```
 
 Налаштування будуть читатися з домашнього каталогу, корінь файлової системи буде монтований у `/mnt/fs`,
 `8000` порт буде виставлено у відповідності до мережевого порту головної системи.
 
+Також Ви можете скористатися [docker compose](https://docs.docker.com/compose/ "Docker Compose") з `docker-compose.yml`:
+
+```yml
+version: '2'
+services:
+  web:
+    ports:
+      - 8000:8000
+    volumes:
+      - ~:/root
+      - /:/mnt/fs
+    image: coderaiser/cloudcmd
+```
+
+Коли створите файл, запустіть:
+
+```sh
+    docker-compose up
+```
 
 Історія версій
 ---------------
