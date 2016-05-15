@@ -16,7 +16,7 @@ lang:
 hideDownloadButtons: true
 ---
 
-Cloud Commander 5.3.2
+Cloud Commander 5.4.0
 ===============
 ###[Головна][MainURL] [Блог][BlogURL] Наживо(![JitSu][JitSu_LIVE_IMG] [JitSu][JitSuURL], ![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 [NPM_INFO_IMG]:             https://camo.githubusercontent.com/254a020afe689842501ef5a79c04ba909f9b29d2/68747470733a2f2f6e6f6465692e636f2f6e706d2f636c6f7564636d642e706e673f646f776e6c6f6164733d7472756526267374617273 "npm install cloudcmd"
@@ -94,11 +94,15 @@ cloudcmd
 | `--port`                  | вказати порт
 | `--minify`                | увімкнути мініфікацію
 | `--progress`              | показувати статус файлових операцій
+| `--html-dialogs`          | показувати html діалоги
+| `--open`                  | відкрити веб браузер після старту сервера
 | `--no-server`             | не запускати сервер
 | `--no-auth`               | вимкнути авторизацію
 | `--no-online`             | вантажити скрипти з локального серверу
+| `--no-open`               | не відкривати веб браузер після старту сервера
 | `--no-minify`             | вимкнути мініфікацію
 | `--no-progress`           | не показувати статус файлових операцій
+| `--no-html-dialogs`       | не використовувати html діалоги
 
 Якщо не задано параметрів, Cloud Commander читає інформацію з `~/.cloudcmd.json` і використовує стандартний порт звідти (`8000` за замовчуванням), якщо змінних з іменами `PORT` або `VCAP_APP_PORT` не існує.
 
@@ -234,14 +238,16 @@ npm update cloudcmd -g
     "buffer"            : true,      /* буфер для копіювання файлів                                 */
     "dirStorage"        : true,      /* зберігаті лістинг каталогів в localStorage                  */
     "minify"            : false,     /* мініфікація js, css, html та зображень                      */
-    "cache"             : true,      /* додати контроль кешу                                        */
     "online"            : true,      /* загрузити файли js з cdn або Local path                     */
+    "open"              : false,     /* відкрити веб браузер після старту сервера                   */
+    "cache"             : true,      /* додати контроль кешу                                        */
     "showKeysPanel"     : true,      /* показати класичну панель з кнопками функціональних клавіш   */
     "port"              : 8000,      /* http порт                                                   */
     "ip"                : null,      /* ip чи null(за замовчуванням)                                */
     "root"              : "/",       /* кореневий каталог                                           */
     "prefix"            : "",        /* url префікс                                                 */
-    "progress"          : true       /* показувати статус файлових операцій                         */
+    "progress"          : true,      /* показувати статус файлових операцій                         */
+    "htmlDialogs"       : true       /* показувати html діалоги                                     */
 }
 ```
 
@@ -440,6 +446,7 @@ services:
 
 Історія версій
 ---------------
+- *2016.05.15*, **[v5.4.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v5.4.0.tar.gz)**
 - *2016.05.11*, **[v5.3.2](//github.com/cloudcmd/archive/raw/master/cloudcmd-v5.3.2.tar.gz)**
 - *2016.03.28*, **[v5.3.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v5.3.1.tar.gz)**
 - *2016.03.28*, **[v5.3.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v5.3.0.tar.gz)**
