@@ -16,16 +16,14 @@ lang:
 hideDownloadButtons: true
 ---
 
-Cloud Commander 5.4.1
-===============
+# Cloud Commander 5.4.2
 
-### [Головна][MainURL] [Блог][BlogURL] Наживо(![JitSu][JitSu_LIVE_IMG] [JitSu][JitSuURL], ![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
-[NPM_INFO_IMG]:             https://camo.githubusercontent.com/254a020afe689842501ef5a79c04ba909f9b29d2/68747470733a2f2f6e6f6465692e636f2f6e706d2f636c6f7564636d642e706e673f646f776e6c6f6164733d7472756526267374617273 "npm install cloudcmd"
+### [Головна][MainURL] [Блог][BlogURL] Наживо(![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
+
 [MainURL]:                  http://cloudcmd.io "Головна"
 [BlogURL]:                  http://blog.cloudcmd.io "Блог"
-[JitSuURL]:                 http://cloudcmd.jit.su "JitSu"
+[NPM_INFO_IMG]:             https://camo.githubusercontent.com/254a020afe689842501ef5a79c04ba909f9b29d2/68747470733a2f2f6e6f6465692e636f2f6e706d2f636c6f7564636d642e706e673f646f776e6c6f6164733d7472756526267374617273 "npm install cloudcmd"
 [HerokuURL]:                http://cloudcmd.herokuapp.com/ "Heroku"
-[JitSu_LIVE_IMG]:           https://status-io.cloudcmd.io/host/cloudcmd.jit.su/img/txt.png "JitSu"
 [HEROKU_LIVE_IMG]:          https://status-io.cloudcmd.io/host/cloudcmd.herokuapp.com/img/txt.png "Heroku"
 
 [DWORD]:                    https://github.com/cloudcmd/dword "Editor based on CodeMirror"
@@ -255,6 +253,7 @@ npm update cloudcmd -g
 Меню
 ---------------
 ![Menu](http://cloudcmd.io/img/screen/menu.png "Меню")
+
 Натискання на праву клавішу мишки, викликає меню з наступними пунктами:
 
 - Перегляд
@@ -447,6 +446,7 @@ services:
 
 Історія версій
 ---------------
+- *2016.06.09*, **[v5.4.2](//github.com/cloudcmd/archive/raw/master/cloudcmd-v5.4.2.tar.gz)**
 - *2016.05.25*, **[v5.4.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v5.4.1.tar.gz)**
 - *2016.05.15*, **[v5.4.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v5.4.0.tar.gz)**
 - *2016.05.11*, **[v5.3.2](//github.com/cloudcmd/archive/raw/master/cloudcmd-v5.3.2.tar.gz)**
@@ -585,6 +585,6 @@ services:
 Щира подяка:
 ---------------
 - [Polietilena](http://polietilena.github.io/ "Polietilena") за **logo** та **favicon**.
-- [TarZak](https://github.com/tarzak)
+- [TarZak](https://github.com/tarzak "TarZak")
     - Російський та український переклади;
     - налаштування: шаблон та стилі
