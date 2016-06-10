@@ -16,7 +16,7 @@ lang:
 hideDownloadButtons: true
 ---
 
-# Cloud Commander 5.4.2
+# Cloud Commander 5.4.3
 
 ### [Головна][MainURL] [Блог][BlogURL] Наживо(![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 
@@ -446,6 +446,7 @@ services:
 
 Історія версій
 ---------------
+- *2016.06.10*, **[v5.4.3](//github.com/cloudcmd/archive/raw/master/cloudcmd-v5.4.3.tar.gz)**
 - *2016.06.09*, **[v5.4.2](//github.com/cloudcmd/archive/raw/master/cloudcmd-v5.4.2.tar.gz)**
 - *2016.05.25*, **[v5.4.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v5.4.1.tar.gz)**
 - *2016.05.15*, **[v5.4.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v5.4.0.tar.gz)**
