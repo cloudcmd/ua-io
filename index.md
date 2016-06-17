@@ -260,7 +260,7 @@ npm update cloudcmd -g
 
 Меню
 ---------------
-![Menu](//cloudcmd.io/img/screen/menu.png "Меню")
+![Меню](//cloudcmd.io/img/screen/menu.png "Меню")
 
 Натискання на праву клавішу мишки, викликає меню з наступними пунктами:
 
