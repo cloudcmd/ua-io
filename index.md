@@ -24,7 +24,7 @@ styles:
 hideDownloadButtons: true
 ---
 
-# Cloud Commander 5.10.0
+# Cloud Commander 5.10.1
 
 ### [Головна][MainURL] [Блог][BlogURL] Наживо(![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 
@@ -35,7 +35,8 @@ hideDownloadButtons: true
 
 [DWORD]:                    https://github.com/cloudcmd/dword "Editor based on CodeMirror"
 [EDWARD]:                   https://github.com/cloudcmd/edward "Editor based on Ace"
-[EDWARD_KEYS]:              https://github.com/cloudcmd/edward/#hot-keys "Edward Hot keys"
+[EDWARD_KEYS]:              https://github.com/cloudcmd/edward/#hot-keys "Edward Hot keys" 
+[TERMUX]:                   https://termux.com "Termux"
 
 **Cloud Commander** - двопанельний веб файл менеджер з консоллю та редактором. Допоможе вам керувати сервером та працювати з файлами, каталогами і програмами в браузері на будь-якому комп'ютері, смартфоні або планшеті.
 
@@ -47,7 +48,7 @@ hideDownloadButtons: true
 - Має дві класичні панелі.
 - Можливість **авторизації**.
 - Клієнт працює у веб браузері.
-- Сервер працює під **Windows**, **Linux** та **Mac OS**.
+- Сервер працює під **Windows**, **Linux**, **Mac OS** та **Android** (за допомогою [Termux][TERMUX]).
 - Може використовуватись локально або віддалено.
 - Підлаштовується під розмір екрану.
 - **Два вбудовані редактори** з підтримкою **підсвітки синтаксису**: [Dword][DWORD] та [Edward][EDWARD].
@@ -60,7 +61,7 @@ hideDownloadButtons: true
 **Cloud Commander** встановлюється дуже просто:
 
 - встановити останню версію [node.js](http://nodejs.org/ "node.js"), якщо ви цього ще не зробили.
-- встановити ```cloudcmd``` через npm:
+- встановити `cloudcmd` через `npm`:
  
 ```sh
 npm i cloudcmd -g
@@ -224,9 +225,7 @@ npm update cloudcmd -g
 | `F10`                 | відкрити
 | `Esc`                 | закрити
 
-Коли Ви змінюєте одну з опцій, файл `~/.cloudcmd.json` може бути збережений.
-Їх можна змінювати особисто в любому текстовому редакторі.
-Опис опцій:
+Результат налаштування файлового менеджера записується в текстовий файл доступний для читання і редагування. Він називається `~/.cloudcmd.json` і містить наступні поля:
 
 ```js
 {
@@ -451,6 +450,7 @@ services:
 
 Історія версій
 ---------------
+- *2016.11.22*, **[v5.10.1](//github.com/coderaiser/cloudcmd/releases/tag/v5.10.1)**
 - *2016.11.18*, **[v5.10.0](//github.com/coderaiser/cloudcmd/releases/tag/v5.10.0)**
 - *2016.11.10*, **[v5.9.1](//github.com/coderaiser/cloudcmd/releases/tag/v5.9.1)**
 - *2016.11.10*, **[v5.9.0](//github.com/coderaiser/cloudcmd/releases/tag/v5.9.0)**
@@ -606,7 +606,7 @@ services:
 
 Щира подяка:
 ---------------
-- [Polietilena](http://polietilena.github.io/ "Polietilena") за **logo** та **favicon**.
+- [Олена Заліток](https://zalitok.github.io/ "Олена Заліток") за **logo** та **favicon**.
 - [TarZak](https://github.com/tarzak "TarZak")
     - Російський та український переклади;
     - налаштування: шаблон та стилі
