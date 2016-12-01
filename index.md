@@ -33,9 +33,10 @@ hideDownloadButtons: true
 [HerokuURL]:                http://cloudcmd.herokuapp.com/ "Heroku"
 [HEROKU_LIVE_IMG]:          https://status-io.cloudcmd.io/host/cloudcmd.herokuapp.com/img/txt.png "Heroku"
 
-[DWORD]:                    https://github.com/cloudcmd/dword "Editor based on CodeMirror"
-[EDWARD]:                   https://github.com/cloudcmd/edward "Editor based on Ace"
-[EDWARD_KEYS]:              https://github.com/cloudcmd/edward/#hot-keys "Edward Hot keys" 
+[DWORD]:                    https://github.com/cloudcmd/dword "Редактор базується на CodeMirror"
+[EDWARD]:                   https://github.com/cloudcmd/edward "Редактор базується на Ace"
+[DEEPWORD]:                 https://github.com/cloudcmd/deepword "Редактор базується на Monaco"
+[EDWARD_KEYS]:              https://github.com/cloudcmd/edward/#hot-keys "Гарячі клавіші Edward" 
 [TERMUX]:                   https://termux.com "Termux"
 
 **Cloud Commander** - двопанельний веб файл менеджер з консоллю та редактором. Допоможе вам керувати сервером та працювати з файлами, каталогами і програмами в браузері на будь-якому комп'ютері, смартфоні або планшеті.
@@ -51,7 +52,7 @@ hideDownloadButtons: true
 - Сервер працює під **Windows**, **Linux**, **Mac OS** та **Android** (за допомогою [Termux][TERMUX]).
 - Може використовуватись локально або віддалено.
 - Підлаштовується під розмір екрану.
-- **Два вбудовані редактори** з підтримкою **підсвітки синтаксису**: [Dword][DWORD] та [Edward][EDWARD].
+- **Три вбудовані редактори** з підтримкою **підсвітки синтаксису**: [Dword][DWORD], [Edward][EDWARD] та [Deepword][DEEPWORD].
 - [Консоль](https://github.com/cloudcmd/console "Консоль") з підтримкою стандартного командного рядка ОС.
 - Написаний на **JavaScript/Node.js**.
  
@@ -447,6 +448,15 @@ services:
 ```sh
     docker-compose up
 ```
+
+Долучайтесь
+---------------
+ 
+Існує багато способів долучитися до розробки `Cloud Commander`:
+ 
+ - якщо ви знайшли баг або маєте ідею [створюйте issue](https://github.com/coderaiser/cloudcmd/issues/new "Створити issue");
+ - якщо ви виправили баг, помилку в тесті або реалізували новий функціонал [створюйте pull request](https://github.com/coderaiser/cloudcmd/compare "Створити pull request");
+ - якщо Ви володієте мовами Ви можете допомогти з [перекладом сайту](https://github.com/coderaiser/cloudcmd/wiki "Вікі спільноти Cloud Commander");
 
 Історія версій
 ---------------
