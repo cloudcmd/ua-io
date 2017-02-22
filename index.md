@@ -24,7 +24,7 @@ styles:
 hideDownloadButtons: true
 ---
 
-# Cloud Commander 6.5.6
+# Cloud Commander 6.6.0
 
 ### [Головна][MainURL] [Блог][BlogURL] Наживо(![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 
@@ -237,7 +237,6 @@ npm update cloudcmd -g
     "editor"            : "edward",  /* стандартний, може бути "dword" або "edward"                 */
     "diff"              : false,     /* при збереженні - відсилає патч, а не повний файл            */
     "zip"               : false,     /* zip текст пере посиланням / unzip перед збереженням         */
-    "notifications"     : false,     /* показувати сповіщення, коли вкладка не активна              */
     "localStorage"      : true,      /* локальне сховище                                            */
     "buffer"            : true,      /* буфер для копіювання файлів                                 */
     "dirStorage"        : true,      /* зберігаті лістинг каталогів в localStorage                  */
@@ -460,6 +459,7 @@ services:
 
 Історія версій
 ---------------
+- *2017.02.22*, **[v6.6.0](//github.com/coderaiser/cloudcmd/releases/tag/v6.6.0)**
 - *2017.02.21*, **[v6.5.6](//github.com/coderaiser/cloudcmd/releases/tag/v6.5.6)**
 - *2017.02.21*, **[v6.5.5](//github.com/coderaiser/cloudcmd/releases/tag/v6.5.5)**
 - *2017.02.17*, **[v6.5.4](//github.com/coderaiser/cloudcmd/releases/tag/v6.5.4)**
