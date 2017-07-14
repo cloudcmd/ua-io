@@ -24,7 +24,7 @@ styles:
 hideDownloadButtons: true
 ---
 
-# Cloud Commander 7.0.1
+# Cloud Commander 7.0.2
 
 ### [Головна][MainURL] [Блог][BlogURL] Наживо(![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 
@@ -459,6 +459,7 @@ services:
 
 Історія версій
 ---------------
+- *2017.07.14*, **[v7.0.2](//github.com/coderaiser/cloudcmd/releases/tag/v7.0.2)**
 - *2017.07.12*, **[v7.0.1](//github.com/coderaiser/cloudcmd/releases/tag/v7.0.1)**
 - *2017.07.12*, **[v7.0.0](//github.com/coderaiser/cloudcmd/releases/tag/v7.0.0)**
 - *2017.07.10*, **[v6.15.5](//github.com/coderaiser/cloudcmd/releases/tag/v6.15.5)**
