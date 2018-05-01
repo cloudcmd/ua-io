@@ -4,6 +4,7 @@
   "private": true,
   "changelog": false,
   "release": false,
+  "tag": false,
   "description": "ua",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
