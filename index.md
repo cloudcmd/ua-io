@@ -24,7 +24,7 @@ styles:
 hideDownloadButtons: true
 ---
 
-# Cloud Commander 9.3.1
+# Cloud Commander 9.3.2
 
 ### [Головна][MainURL] [Блог][BlogURL] Наживо(![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 
@@ -294,32 +294,65 @@ Cloud Commander може працювати в режимі однієї пан�
 Використання у ролі Middleware
 ---------------
 
-Cloud Commander можна використовувати як middleware для `node.js` додатків, що побудовані на  [socket.io](http://socket.io "Socket.IO") та [express](http://expressjs.com "Express"):
+Cloud Commander можна використовувати як middleware для `node.js` додатків, що побудовані на  [socket.io](http://socket.io "Socket.IO") та [express](http://expressjs.com "Express").
+
+Створіть `package.json`:
+
+```
+npm init -y
+```
+
+Встановіть залежності:
+
+```
+npm i cloudcmd express socket.io -S
+```
+
+Та створіть `index.js`:
 
 ```js
-var http        = require('http'),
-    cloudcmd    = require('cloudcmd'),
-    express     = require('express'),
-    io          = require('socket.io'),
-    app         = express(),
-    
-    PORT        = 1337,
-    
-    server,
-    socket;
-    
-server = http.createServer(app);
-socket = io.listen(server);
+const http = require('http');
+const cloudcmd = require('cloudcmd');
+const io = require('socket.io');
+const app = require('express')();
+
+const port = 1337;
+const prefix = '/cloudcmd';
+
+const server = http.createServer(app);
+const socket = io.listen(server, {
+    path: `${prefix}/socket.io`
+});
+
+const config = {
+    prefix, // основний URL або функція що повертає основний URL (не обов'язково)
+};
+
+const plugins = [
+    __dirname + '/plugin.js'
+];
+
+const filePicker = {
+    data: {
+        FilePicker: {
+            key: 'key'
+        }
+    }
+};
+
+// перевизначити налаштування з json/modules.json
+const modules = {
+    filePicker,
+};
 
 app.use(cloudcmd({
-    
-    socket: socket,      /* використовується Config'ом, Edit'ом (не обов'язково) та Console'ллю (обов'язково)   */
-    config: {                /* дані налаштуваннь (не обов'язково)                                              */
-        prefix: '/cloudcmd', /* основний URL або функція що повертає основний URL (не обов'язково)              */
-    }
+    socket,  // використовується Config'ом, Edit'ом (не обов'язково) та Console'ллю (обов'язково)
+    config,  // дані налаштуваннь (не обов'язково)
+    plugins, // не обов'язково
+    modules, // не обов'язково
 }));
 
-server.listen(PORT);
+server.listen(port);
 ```
 
 Сервер
@@ -459,6 +492,7 @@ services:
 
 Історія версій
 ---------------
+- *2018.05.01*, **[v9.3.2](//github.com/coderaiser/cloudcmd/releases/tag/v9.3.2)**
 - *2018.04.30*, **[v9.3.1](//github.com/coderaiser/cloudcmd/releases/tag/v9.3.1)**
 - *2018.04.27*, **[v9.3.0](//github.com/coderaiser/cloudcmd/releases/tag/v9.3.0)**
 - *2018.04.25*, **[v9.2.0](//github.com/coderaiser/cloudcmd/releases/tag/v9.2.0)**
