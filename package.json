@@ -7,7 +7,7 @@
   "description": "ua",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "release": "curl https://raw.githubusercontent.com/cloudcmd/ua/gh-pages/index.md > index.md",
+    "release": "curl https://raw.githubusercontent.com/cloudcmd/ua/master/index.md > index.md",
     "wisdom": "npm run release"
   },
   "repository": {
