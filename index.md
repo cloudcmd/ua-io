@@ -24,7 +24,7 @@ styles:
 hideDownloadButtons: true
 ---
 
-# Cloud Commander 9.3.2
+# Cloud Commander 9.4.0
 
 ### [Головна][MainURL] [Блог][BlogURL] Наживо(![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 
@@ -289,7 +289,7 @@ npm update cloudcmd -g
 Cloud Commander може працювати в режимі однієї панелі, у випадку, коли розмір екрану не дає змоги розмістити другу панель.
 Таке може статися коли Ви працюєте з файловим менеджером із мобільного засобу, планшету або у маленькому вікні браузера.
 
-![Режим однієї панелі](//cloudcmd.io/img/screen/one-panel-mode.png "Режим однієї панелі")
+![Режим однієї панелі](//cloudcmd.io/img/screen/one-file-panel.png "Режим однієї панелі")
 
 Використання у ролі Middleware
 ---------------
@@ -492,6 +492,7 @@ services:
 
 Історія версій
 ---------------
+- *2018.05.08*, **[v9.4.0](//github.com/coderaiser/cloudcmd/releases/tag/v9.4.0)**
 - *2018.05.01*, **[v9.3.2](//github.com/coderaiser/cloudcmd/releases/tag/v9.3.2)**
 - *2018.04.30*, **[v9.3.1](//github.com/coderaiser/cloudcmd/releases/tag/v9.3.1)**
 - *2018.04.27*, **[v9.3.0](//github.com/coderaiser/cloudcmd/releases/tag/v9.3.0)**
