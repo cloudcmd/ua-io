@@ -24,14 +24,14 @@ styles:
 hideDownloadButtons: true
 ---
 
-# Cloud Commander 11.5.2
+# Cloud Commander 11.5.3
 
 ### [Головна][MainURL] [Блог][BlogURL] Наживо(![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 
 [MainURL]:                  http://cloudcmd.io "Головна"
 [BlogURL]:                  http://blog.cloudcmd.io "Блог"
 [HerokuURL]:                http://cloudcmd.herokuapp.com/ "Heroku"
-[HEROKU_LIVE_IMG]:          https://status-io.cloudcmd.io/host/cloudcmd.herokuapp.com/img/txt.png "Heroku"
+[HEROKU_LIVE_IMG]:          https://status.cloudcmd.io/host/cloudcmd.herokuapp.com/img/txt.png "Heroku"
 
 [DWORD]:                    https://github.com/cloudcmd/dword "Редактор базується на CodeMirror"
 [EDWARD]:                   https://github.com/cloudcmd/edward "Редактор базується на Ace"
@@ -492,6 +492,7 @@ services:
 
 Історія версій
 ---------------
+- *2018.10.19*, **[v11.5.3](//github.com/coderaiser/cloudcmd/releases/tag/v11.5.3)**
 - *2018.10.19*, **[v11.5.2](//github.com/coderaiser/cloudcmd/releases/tag/v11.5.2)**
 - *2018.10.17*, **[v11.5.1](//github.com/coderaiser/cloudcmd/releases/tag/v11.5.1)**
 - *2018.10.16*, **[v11.5.0](//github.com/coderaiser/cloudcmd/releases/tag/v11.5.0)**
