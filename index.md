@@ -24,7 +24,7 @@ styles:
 hideDownloadButtons: true
 ---
 
-# Cloud Commander 11.8.1
+# Cloud Commander 11.8.2
 
 ### [Головна][MainURL] [Блог][BlogURL] Наживо(![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 
@@ -492,6 +492,7 @@ services:
 
 Історія версій
 ---------------
+- *2018.11.22*, **[v11.8.2](//github.com/coderaiser/cloudcmd/releases/tag/v11.8.2)**
 - *2018.11.14*, **[v11.8.1](//github.com/coderaiser/cloudcmd/releases/tag/v11.8.1)**
 - *2018.11.09*, **[v11.8.0](//github.com/coderaiser/cloudcmd/releases/tag/v11.8.0)**
 - *2018.11.01*, **[v11.7.1](//github.com/coderaiser/cloudcmd/releases/tag/v11.7.1)**
