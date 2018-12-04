@@ -22,5 +22,8 @@
   },
   "homepage": "https://github.com/cloudcmd/ru",
   "devDependencies": {},
-  "dependencies": {}
+  "dependencies": {},
+  "publishConfig": {
+    "access": "restricted"
+  }
 }
