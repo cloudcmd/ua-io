@@ -24,7 +24,7 @@ styles:
 hideDownloadButtons: true
 ---
 
-# Cloud Commander 14.7.2
+# Cloud Commander 14.8.0
 
 ### [Головна][MainURL] [Блог][BlogURL] Наживо(![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 
@@ -492,6 +492,7 @@ services:
 
 Історія версій
 ---------------
+- *2020.08.14*, **[v14.8.0](//github.com/coderaiser/cloudcmd/releases/tag/v14.8.0)**
 - *2020.08.11*, **[v14.7.2](//github.com/coderaiser/cloudcmd/releases/tag/v14.7.2)**
 - *2020.08.11*, **[v14.7.1](//github.com/coderaiser/cloudcmd/releases/tag/v14.7.1)**
 - *2020.08.10*, **[v14.7.0](//github.com/coderaiser/cloudcmd/releases/tag/v14.7.0)**
