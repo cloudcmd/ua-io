@@ -24,7 +24,7 @@ styles:
 hideDownloadButtons: true
 ---
 
-# Cloud Commander 15.3.0
+# Cloud Commander 15.3.1
 
 ### [Головна][MainURL] [Блог][BlogURL] Наживо(![Heroku][Heroku_LIVE_IMG] [Heroku][HerokuURL])
 
@@ -492,6 +492,7 @@ services:
 
 Історія версій
 ---------------
+- *2021.01.17*, **[v15.3.1](//github.com/coderaiser/cloudcmd/releases/tag/v15.3.1)**
 - *2021.01.17*, **[v15.3.0](//github.com/coderaiser/cloudcmd/releases/tag/v15.3.0)**
 - *2021.01.16*, **[v15.2.0](//github.com/coderaiser/cloudcmd/releases/tag/v15.2.0)**
 - *2021.01.07*, **[v15.1.0](//github.com/coderaiser/cloudcmd/releases/tag/v15.1.0)**
