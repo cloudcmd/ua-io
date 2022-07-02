@@ -24,12 +24,13 @@ styles:
 hideDownloadButtons: true
 ---
 
-# Cloud Commander 16.3.0
+# Cloud Commander 16.3.1
 
-### [Головна][MainURL] [Блог][BlogURL]
+### [Головна][MainURL] [Блог][BlogURL] [Підтримати](SupportURL)
 
 [MainURL]:                  http://cloudcmd.io "Головна"
 [BlogURL]:                  http://blog.cloudcmd.io "Блог"
+[SupportURL]:               https://patreon.com/coderaiser "Patreon"
 
 [DWORD]:                    https://github.com/cloudcmd/dword "Редактор базується на CodeMirror"
 [EDWARD]:                   https://github.com/cloudcmd/edward "Редактор базується на Ace"
@@ -490,6 +491,7 @@ services:
 
 Історія версій
 ---------------
+- *2022.07.02*, **[v16.3.1](//github.com/coderaiser/cloudcmd/releases/tag/v16.3.1)**
 - *2022.07.01*, **[v16.3.0](//github.com/coderaiser/cloudcmd/releases/tag/v16.3.0)**
 - *2022.06.17*, **[v16.2.0](//github.com/coderaiser/cloudcmd/releases/tag/v16.2.0)**
 - *2022.05.12*, **[v16.1.1](//github.com/coderaiser/cloudcmd/releases/tag/v16.1.1)**
