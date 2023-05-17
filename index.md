@@ -24,7 +24,7 @@ styles:
 hideDownloadButtons: true
 ---
 
-# Cloud Commander 16.14.1
+# Cloud Commander 16.15.0
 
 ### [Головна][MainURL] [Блог][BlogURL] [Підтримати](SupportURL)
 
@@ -491,6 +491,7 @@ services:
 
 Історія версій
 ---------------
+- *2023.05.17*, **[v16.15.0](//github.com/coderaiser/cloudcmd/releases/tag/v16.15.0)**
 - *2023.03.21*, **[v16.14.1](//github.com/coderaiser/cloudcmd/releases/tag/v16.14.1)**
 - *2023.03.08*, **[v16.14.0](//github.com/coderaiser/cloudcmd/releases/tag/v16.14.0)**
 - *2023.01.30*, **[v16.13.1](//github.com/coderaiser/cloudcmd/releases/tag/v16.13.1)**
