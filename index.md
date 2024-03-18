@@ -24,7 +24,7 @@ styles:
 hideDownloadButtons: true
 ---
 
-# Cloud Commander 17.1.1
+# Cloud Commander 17.1.2
 
 ### [Головна][MainURL] [Блог][BlogURL] [Підтримати](SupportURL)
 
@@ -491,6 +491,7 @@ services:
 
 Історія версій
 ---------------
+- *2024.03.18*, **[v17.1.2](//github.com/coderaiser/cloudcmd/releases/tag/v17.1.2)**
 - *2024.03.16*, **[v17.1.1](//github.com/coderaiser/cloudcmd/releases/tag/v17.1.1)**
 - *2024.03.16*, **[v17.1.0](//github.com/coderaiser/cloudcmd/releases/tag/v17.1.0)**
 - *2024.03.12*, **[v17.0.7](//github.com/coderaiser/cloudcmd/releases/tag/v17.0.7)**
