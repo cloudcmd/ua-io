@@ -24,7 +24,7 @@ styles:
 hideDownloadButtons: true
 ---
 
-# Cloud Commander 17.3.0
+# Cloud Commander 17.3.1
 
 ### [Головна][MainURL] [Блог][BlogURL] [Підтримати](SupportURL)
 
@@ -491,6 +491,7 @@ services:
 
 Історія версій
 ---------------
+- *2024.03.29*, **[v17.3.1](//github.com/coderaiser/cloudcmd/releases/tag/v17.3.1)**
 - *2024.03.29*, **[v17.3.0](//github.com/coderaiser/cloudcmd/releases/tag/v17.3.0)**
 - *2024.03.29*, **[v17.2.1](//github.com/coderaiser/cloudcmd/releases/tag/v17.2.1)**
 - *2024.03.22*, **[v17.2.0](//github.com/coderaiser/cloudcmd/releases/tag/v17.2.0)**
@@ -960,7 +961,7 @@ services:
 
 Щира подяка:
 ---------------
-- [Олена Заліток](https://www.linkedin.com/in/olena-zalitok-ux-designer "Олена Заліток") за **logo** та **favicon**.
+- [Олена Заліток](https://www.linkedin.com/in/ozalitok-ux-ui/ "Олена Заліток") за **logo** та **favicon**.
 - [TarZak](https://github.com/tarzak "TarZak")
     - Російський та український переклади;
     - налаштування: шаблон та стилі
