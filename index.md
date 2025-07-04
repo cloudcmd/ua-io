@@ -24,7 +24,7 @@ styles:
 hideDownloadButtons: true
 ---
 
-# Cloud Commander 18.8.0
+# Cloud Commander 18.8.1
 
 ### [Головна][MainURL] [Блог][BlogURL] [Підтримати](SupportURL)
 
@@ -491,6 +491,7 @@ services:
 
 Історія версій
 ---------------
+- *2025.07.04*, **[v18.8.1](//github.com/coderaiser/cloudcmd/releases/tag/v18.8.1)**
 - *2025.07.02*, **[v18.8.0](//github.com/coderaiser/cloudcmd/releases/tag/v18.8.0)**
 - *2025.04.10*, **[v18.7.1](//github.com/coderaiser/cloudcmd/releases/tag/v18.7.1)**
 - *2025.03.29*, **[v18.7.0](//github.com/coderaiser/cloudcmd/releases/tag/v18.7.0)**
