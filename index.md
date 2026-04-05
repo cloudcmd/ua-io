@@ -24,7 +24,7 @@ styles:
 hideDownloadButtons: true
 ---
 
-# Cloud Commander 19.11.5
+# Cloud Commander 19.11.6
 
 ### [Головна][MainURL] [Блог][BlogURL] [Підтримати](SupportURL)
 
@@ -491,6 +491,7 @@ services:
 
 Історія версій
 ---------------
+- *2026.04.05*, **[v19.11.6](//github.com/coderaiser/cloudcmd/releases/tag/v19.11.6)**
 - *2026.04.05*, **[v19.11.5](//github.com/coderaiser/cloudcmd/releases/tag/v19.11.5)**
 - *2026.04.04*, **[v19.11.4](//github.com/coderaiser/cloudcmd/releases/tag/v19.11.4)**
 - *2026.04.04*, **[v19.11.3](//github.com/coderaiser/cloudcmd/releases/tag/v19.11.3)**
